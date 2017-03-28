@@ -9,7 +9,10 @@
          <button md-icon-button (click)="enableSeach=true">
                     <md-icon>search</md-icon>
          </button>
-         <div layout-gt-sm="row" *ngIf="enableSeach">
+    </md-toolbar>
+
+    <md-toolbar *ngIf="enableSeach" class="app-toolbar" color="accent">
+        <div layout-gt-sm="row" >
             <md-input-container class="md-block">
                 <input mdInput (keyup)="doSearch(inputCode.value)" #inputCode>
             </md-input-container>
