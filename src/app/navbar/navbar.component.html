@@ -1,7 +1,7 @@
 <md-sidenav-container class="app-inner">
     <md-sidenav #nav class="app-sidebar-panel" mode="over" [opened]="false">
         <!-- // TO DO add profile container as follows-->
-        <md-toolbar>
+        <!--<md-toolbar>
           <md-toolbar class="md-warn layout-align-center-center layout-row" layout="row" layout-align="center center">
             <img class="img-circle"  src="assets/images/avatar2x.png">
                  <md-menu md-offset="0 20" class="md-menu ng-scope">
@@ -9,12 +9,18 @@
                    </button>
                  </md-menu>
           </md-toolbar>
-        </md-toolbar>
+        </md-toolbar>-->
 
         <!-- // End of TO DO-->
         <md-nav-list>
             <md-list-item >
-                <a (click)="nav.close()">Profile</a>
+                <a (click)="nav.close()">System</a>
+            </md-list-item>
+            <md-list-item >
+                <a (click)="nav.close()">Configuration</a>
+            </md-list-item>
+            <md-list-item >
+                <a (click)="nav.close()">Global Configuration</a>
             </md-list-item>
         </md-nav-list>
     </md-sidenav>
