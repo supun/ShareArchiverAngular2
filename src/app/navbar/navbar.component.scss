@@ -1,0 +1,48 @@
+$app-toolbar-height: 48px !default;
+$app-route-content-padding: 0.5rem !default;
+$app-sidebar-width: 15.65rem !default;
+
+.app-inner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background: white;
+    
+}
+
+md-sidenav.app-sidebar-panel {
+    overflow-x: hidden;
+    width: $app-sidebar-width;
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+md-toolbar {
+    min-height: $app-toolbar-height !important;
+    md-toolbar-row {
+        min-height: $app-toolbar-height !important;
+        height: $app-toolbar-height !important;
+    }
+    &.main-header {
+        position: relative;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+        z-index: 1;
+    }
+}
+
+.app-toolbar {
+    position: relative;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+}
+
+.app-route-content {
+    overflow-y: scroll;
+    padding: #{$app-route-content-padding} !important;
+    height: calc(100vh - #{$app-toolbar-height} - #{$app-route-content-padding} * 2);
+   
+}
+
+.menu-active {
+    color: red
+}

@@ -1,0 +1,11 @@
+<md-sidenav-container class="app-inner">
+    <md-sidenav #nav class="app-sidebar-panel" mode="over" [opened]="false">
+        ShareArchiver app logo
+        <md-nav-list>
+            <md-list-item >
+                <a (click)="nav.close()">Profile</a>
+            </md-list-item>
+        </md-nav-list>
+    </md-sidenav>
+    <app-toolbar [nav]="nav"></app-toolbar>
+</md-sidenav-container>

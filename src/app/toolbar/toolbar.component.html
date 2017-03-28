@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutAlign="start stretch">
+    <md-toolbar class="app-toolbar" color="primary">
+        <button md-icon-button (click)="nav.open()">
+                    <md-icon >menu</md-icon>
+        </button>
+
+        <span style="margin-left: 20px" class="example-fill-remaining-space"> ShareArchiver Angular Material2 Example App</span>
+        
+         <button md-icon-button (click)="enableSeach=true">
+                    <md-icon>search</md-icon>
+         </button>
+         <div layout-gt-sm="row" *ngIf="enableSeach">
+            <md-input-container class="md-block">
+                <input mdInput (keyup)="doSearch(inputCode.value)" #inputCode>
+            </md-input-container>
+        </div>
+        <button md-icon-button *ngIf="enableSeach" (click)="enableSeach=false">
+                    <md-icon>close</md-icon>
+        </button>
+    </md-toolbar>
+</div>

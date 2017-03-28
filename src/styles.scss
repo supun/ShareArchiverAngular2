@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+
+}
+body {
+  margin: 0;
+   font-family: Roboto;
+}
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+.center-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.auth {
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .error {
+    font-size: smaller;
+    color: red;
+  }
+}
+md-input {
+  width: 100%;
+}
+
+
+
+.mat-card {
+margin: 20px;
+}
