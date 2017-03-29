@@ -21,7 +21,9 @@
       "styles": [
         "share-archiver-app-theme.scss",
         "styles.scss",
-        "../node_modules/roboto-fontface/css/roboto/roboto-fontface.css"
+        "../node_modules/roboto-fontface/css/roboto/roboto-fontface.css",
+         "../src/assets/theme/base-layout.scss"
+         
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
