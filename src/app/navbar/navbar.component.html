@@ -1,5 +1,5 @@
-<md-sidenav-container class="app-inner">
-    <md-sidenav #nav class="app-sidebar-panel" mode="over" [opened]="false">
+<md-sidenav-container>
+    <md-sidenav #nav mode="side" class="app-sidenav" [opened]="false">
         <!-- // TO DO add profile container as follows-->
         <!--<md-toolbar>
           <md-toolbar class="md-warn layout-align-center-center layout-row" layout="row" layout-align="center center">
@@ -25,4 +25,5 @@
         </md-nav-list>
     </md-sidenav>
     <app-toolbar [nav]="nav"></app-toolbar>
+    <app-main></app-main>
 </md-sidenav-container>
