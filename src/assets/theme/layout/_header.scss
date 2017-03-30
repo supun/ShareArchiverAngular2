@@ -63,3 +63,18 @@ h6 {
 p {
     margin: 0 0 9px
 }
+
+md-input-container,md-select{
+
+    width: 100%
+}
+
+
+.color-block {
+    height: 100px;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 2px;
+    margin-bottom: 25px;
+}
