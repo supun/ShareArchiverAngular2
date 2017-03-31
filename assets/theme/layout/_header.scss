@@ -63,3 +63,49 @@ h6 {
 p {
     margin: 0 0 9px
 }
+
+md-input-container,md-select{
+
+    width: 100%
+}
+
+.color-block {
+    height: 50px;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 2px;
+    margin-bottom: 25px;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #FF9800;
+    border-color: #e68900;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #2196F3;
+    border-color: #0d8aee;
+}
+.btn-success {
+    color: #fff;
+    background-color: #4CAF50;
+    border-color: #449d48;
+}
+.btn-warning {
+    color: #fff;
+    background-color: #FF9800;
+    border-color: #e68900;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #F44336;
+    border-color: #f32c1e;
+}
