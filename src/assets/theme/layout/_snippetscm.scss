@@ -1345,7 +1345,7 @@ caption {
 .table>tfoot>tr>th,
 .table>thead>tr>td,
 .table>thead>tr>th {
-    padding: 15px;
+    padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
     border-top: 1px solid #F5F5F5
@@ -3746,6 +3746,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus,
 fieldset[disabled] .navbar-inverse .btn-link:hover {
     color: #444
 }
+.pagination i{
+    margin-top:8px;
+}
 .breadcrumb {
     padding: 8px 20px;
     list-style: none;
@@ -3811,7 +3814,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pagination>.active>span:hover {
     z-index: 3;
     color: #fff;
-    background-color: #00BCD4;
+    background-color: #ff5722;
     border-color: #fff;
     cursor: default
 }
@@ -6413,7 +6416,7 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-    font-size: 12px
+    font-size: 12px !important;
 }
 #main {
     padding-bottom: 110px;
@@ -6738,43 +6741,45 @@ h6 small {
     margin-bottom: 30px
 }
 @media screen and (min-width: 768px) {
-    .card .card-header {
-        padding: 25px 27px
+    .mat-card .mdcard-header {
+        padding: 15px 15px
     }
 }
 @media screen and (max-width: 991px) {
-    .card .card-header {
-        padding: 18px
+    .mat-card .mdcard-header {
+        padding: 10px
     }
 }
-.card .card-header h2 {
+.mat-card .mdcard-header h2 {
     margin: 0;
     line-height: 100%;
     font-size: 17px;
     font-weight: 400
 }
-.card .card-header h2 small {
+.mat-card .mdcard-header h2 small {
     display: block;
     margin-top: 8px;
     color: #AEAEAE;
     line-height: 160%
 }
-.card .card-header[class*=bgm-] h2,
-.card .card-header[class*=bgm-] h2 small,
+.mat-card .mdcard-header[class*=bgm-] h2,
+.mat-card .mdcard-header[class*=bgm-] h2 small,
 .card-light .card-header h2,
 .card-light .card-header h2 small {
     color: #fff
 }
-.card .card-header.ch-alt:not([class*=bgm-]) {
+
+
+.mat-card .mdcard-header.ch-alt:not([class*=bgm-]) {
     background-color: #f7f7f7
 }
-.card .card-header .actions {
+.mat-card .mdcard-header .actions {
     position: absolute;
     right: 10px;
     z-index: 2;
     top: 15px
 }
-.card .card-header .btn-float {
+.mat-card .mdcard-header .btn-float {
     right: 25px;
     bottom: -23px;
     z-index: 1
@@ -7975,4 +7980,14 @@ html:not(.ie9) .select.fg-line:before {
     width: 25px;
     height: 3px;
     background: #FF9800
+}
+
+
+.bootgrid-footer .infoBar .infos {
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    float: right;
+    padding: 7px 30px;
+    font-size: 12px;
+    margin-top: 32px;
 }
