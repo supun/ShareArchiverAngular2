@@ -13,4 +13,11 @@ export class ToolbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  openNavBar(){
+    if(this.nav.opened == false){
+          this.nav.open();
+    } else {
+      this.nav.close();
+    }
+  }
 }
