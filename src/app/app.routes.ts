@@ -6,10 +6,10 @@ import { HomeComponent } from './home/home.component';
 export const appRoutes: Routes = [
   {
     path: '', 
-    component: HomeComponent
+    component: MainComponent
    },
    {
      path:'main',
-     component:MainComponent
+     component:HomeComponent
    }
 ];
