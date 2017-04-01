@@ -7225,12 +7225,18 @@ fieldset[disabled] .btn-inverse:hover {
     background-color: #fff
 }
 .btn-icon {
-    border-radius: 50%;
-    width: 40px;
-    line-height: 42px;
-    height: 40px;
-    padding: 0;
-    text-align: center
+    border-radius: 50% !important;
+    width: 35px !important;
+    line-height: 32px !important;
+    height: 35px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    min-width: inherit !important;
+}
+.btn-icon .material-icons {
+    font-size: 17px !important;
+        line-height: 20px !important;
+        color: #fff;
 }
 .btn-icon .zmdi {
     font-size: 17px
@@ -7991,3 +7997,4 @@ html:not(.ie9) .select.fg-line:before {
     font-size: 12px;
     margin-top: 32px;
 }
+
