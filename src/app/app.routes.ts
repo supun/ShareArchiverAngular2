@@ -60,5 +60,9 @@ export const appRoutes: Routes = [
    {
      path:'main',
      component:MainComponent
+   },
+   {
+     path:'components',
+     component:HomeComponent
    }
 ];
