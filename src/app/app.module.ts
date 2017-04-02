@@ -19,6 +19,11 @@ import { JobStatusComponent } from './system/job-status/job-status.component';
 import { RepositoryStatusComponent } from './system/repository-status/repository-status.component';
 import { JobManagementComponent } from './configuration/job-management/job-management.component';
 import { SystemStatusComponent } from './system/system-status/system-status.component';
+import { GlobalConfigurationComponent } from './system-configuration/global-configuration/global-configuration.component';
+import { UserManagementComponent } from './user-group/user-management/user-management.component';
+import { GroupManagementComponent } from './user-group/group-management/group-management.component';
+import { AccountPolicyComponent } from './user-group/account-policy/account-policy.component';
+import { UserCompanyManagementComponent } from './user-group/user-company-management/user-company-management.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import { SystemStatusComponent } from './system/system-status/system-status.comp
     JobStatusComponent,
     RepositoryStatusComponent,
     JobManagementComponent,
-    SystemStatusComponent
+    SystemStatusComponent,
+    GlobalConfigurationComponent,
+    UserManagementComponent,
+    GroupManagementComponent,
+    AccountPolicyComponent,
+    UserCompanyManagementComponent
   ],
   imports: [
     BrowserModule,

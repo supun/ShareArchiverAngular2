@@ -18,11 +18,29 @@ export class SystemStatusComponent implements OnInit {
     {data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'},
     {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'}
   ];
-  
+  private barChartbackgroundColor: any[] = [{
+    backgroundColor: '#f49b42',
+    borderColor: '#1D871B'
+  }, { // grey
+    backgroundColor: '#83b9f7',
+    borderColor: '#555'
+  }]
+
   // Pie
   public pieChartLabels:string[] = ['Single Instance', 'Duplicates'];
   public pieChartData:number[] = [500, 100];
   public pieChartType:string = 'pie';
+  public pieChartColor:any[] = [
+    {     backgroundColor: [
+                "#f2bb80",
+                "#36A2EB"  ]},
+            {
+              hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB"
+            ]}
+  ];
+  
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,171 @@
+<div class="app-content">
+  <!-- globale configarations code-->
+<md-card>
+    <div class="mdcard-header">
+        <h2>Global Configuration
+            <small>System edit form
+                                </small>
+        </h2>
+    </div>
+    <div class="m-r-15 m-l-15">
+        <div class="row">
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="DNS Suffix" value="us-west-2.compute.internal">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="DNS Server 1" value="172.31.0.2">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="DNS Server 2" value="172.33.0.4">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="User Name (domain\username)" value="">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Password" value="">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Max no. of Versions" value="5">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Disk Warning Limit" value="90">
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+
+        <div class="row checkbox-cage">
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Thumbnails on Summary</md-checkbox>
+                                   
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Lazy Archiving</md-checkbox>
+                                   </div>
+            </div>
+
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Lazy Export</md-checkbox>                   
+                </div>
+            </div>
+
+
+
+            <div class='col-md-6'>
+                <div class="form-group">
+ <md-checkbox class="example-margin" [(ngModel)]="checked"> Show Folder size in File Explorer</md-checkbox>
+
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Stubs Recovery Mode</md-checkbox>                    
+                </div>
+
+            </div>
+
+               <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Job Mapping</md-checkbox>                    
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="row m-t-20">
+         <div class='col-md-6'>File Authorization Mode</div>
+          <div class='col-md-6'>
+<md-radio-group [(ngModel)]="align">
+        <md-radio-button class="example-margin" value="start"> Use Share & NTFS Permissions	</md-radio-button>
+        <md-radio-button class="example-margin" value="end">NTFS Permissions only</md-radio-button>
+      </md-radio-group>
+
+          </div>
+    </div>
+
+<div class="row m-t-20 m-b-20">
+     <div class='col-md-6'> 
+
+         <div class="row">
+               <div class='col-md-9'>
+               <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Disk Warning LimitGlobal Excluded File Type" value="">
+                    </md-input-container>
+                </div>
+                
+                 
+         </div>
+         <div class='col-md-3'><button md-raised-button>Add</button></div>
+        </div>
+     </div>
+        <div class='col-md-6'> 
+
+         <div class="row">
+               <div class='col-md-9'>
+               <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Disk Warning LimitGlobal Excluded File Type" value="">
+                    </md-input-container>
+                </div>
+                
+                 
+         </div>
+         <div class='col-md-3'><button md-raised-button>Remove</button></div>
+        </div>
+     </div>
+  </div>
+    </div>
+
+ <md-divider></md-divider>
+<div class="row">
+    <div class='col-md-12 m-t-20 text-center'> 
+        <button md-raised-button class="txt-white btn btn-lg btn-primary ">
+            <i class="material-icons">system_update_alt</i> Update
+            </button> 
+            </div>
+</div>
+</md-card>
+<!-- end globale configarations code-->
+</div>

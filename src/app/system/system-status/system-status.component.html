@@ -152,6 +152,7 @@
                         -->
                              <canvas baseChart
                                  [data]="pieChartData"
+                                 [colors]="pieChartColor"
                                  [labels]="pieChartLabels"
                                  [chartType]="pieChartType"></canvas>
                         <!--</div>
@@ -175,6 +176,7 @@
                         -->
                         <canvas baseChart
                                  [data]="pieChartData"
+                                 [colors]="pieChartColor"
                                  [labels]="pieChartLabels"
                                  [chartType]="pieChartType"></canvas>
                         <!--</div>
@@ -208,6 +210,7 @@
                 -->
                 <canvas baseChart
             [datasets]="barChartData"
+            [colors]="barChartbackgroundColor"
             [labels]="barChartLabels"
             [options]="barChartOptions"
             [legend]="barChartLegend"
@@ -241,6 +244,7 @@
         <div class="mini-charts-item">
             <canvas baseChart
             [datasets]="barChartData"
+            [colors]="barChartbackgroundColor"
             [labels]="barChartLabels"
             [options]="barChartOptions"
             [legend]="barChartLegend"
