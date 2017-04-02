@@ -145,16 +145,21 @@
                     <h2>Repository Stats (Number of Files) </h2>
 
                 </div>
-                <div class="mini-charts-item bgm-cyan">
-                    <div class="clearfix">
+                <div class="mini-charts-item">
+                    <!--<div class="clearfix">
                         <div class="chart stats-bar">
                             <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
-                        </div>
+                        -->
+                             <canvas baseChart
+                                 [data]="pieChartData"
+                                 [labels]="pieChartLabels"
+                                 [chartType]="pieChartType"></canvas>
+                        <!--</div>
                         <div class="count">
                             <small>Number of Files</small>
                             <h2>987,459</h2>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </md-card>
         </div>
@@ -163,31 +168,31 @@
                 <div class="mdcard-header">
                     <h2>Repository Stats (Data Volume in MBs) </h2>
                 </div>
-                <div class="mini-charts-item bgm-purple">
-                    <div class="clearfix">
+                <div class="mini-charts-item">
+<!--                    <div class="clearfix">
                         <div class="chart stats-bar-2">
-                            <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
-                        </div>
+                           <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
+                        -->
+                        <canvas baseChart
+                                 [data]="pieChartData"
+                                 [labels]="pieChartLabels"
+                                 [chartType]="pieChartType"></canvas>
+                        <!--</div>
                         <div class="count">
                             <small>Data Volume</small>
                             <h2>356,785K</h2>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </md-card>
         </div>
 
     </div>
-
-
-
-
-
     <md-card class="p-0 ">
         <div class="mdcard-header">
             <div class="row">
                 <div class="col-md-6 col-sm-6 ">
-                    <h2 class="m-t-10">File Count </h2>
+                    <h2 class="m-t-10">Repository</h2>
                 </div>
                 <div class="col-md-6 col-sm-6 text-right ">
 
@@ -196,16 +201,23 @@
                 </div>
             </div>
         </div>
-        <div class="mini-charts-item bgm-orange">
-            <div class="clearfix">
+        <div class="mini-charts-item">
+<!--            <div class="clearfix">
                 <div class="chart stats-line">
-                    <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
-                </div>
-                <div class="count">
+                <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
+                -->
+                <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"></canvas>
+                <!--</div>-->
+                <!--<div class="count">
                     <small>Total Sales</small>
                     <h2>$ 458,778</h2>
                 </div>
-            </div>
+            </div>-->
         </div>
     </md-card>
 
@@ -226,8 +238,14 @@
                 </div>
             </div>
         </div>
-        <div class="mini-charts-item bgm-bluegray">
-            <div class="clearfix">
+        <div class="mini-charts-item">
+            <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"></canvas>
+            <!--<div class="clearfix">
                 <div class="chart stats-line-2">
                     <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
                 </div>
@@ -235,7 +253,7 @@
                     <small>Support Tickets</small>
                     <h2>23,856</h2>
                 </div>
-            </div>
+            </div>-->
         </div>
     </md-card>
 

@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import {MaterialModule} from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { ChartsModule } from 'ng2-charts';
 import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -39,7 +40,8 @@ import { SystemStatusComponent } from './system/system-status/system-status.comp
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    [MaterialModule.forRoot(),FlexLayoutModule]
+    [MaterialModule.forRoot(),FlexLayoutModule],
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
