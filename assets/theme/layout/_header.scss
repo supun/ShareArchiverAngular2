@@ -204,7 +204,7 @@ color: #fff !important;
 color: #fff !important;
 
 }
-.mat-list, .mat-nav-list{
+app-sidenav .mat-list, .mat-nav-list{
     padding-top: 0px !important;
         display: block;
     border-top: 3px solid #757575;
@@ -287,7 +287,7 @@ md-card{
 
 .lbl{
 border-radius: 3px;
-font-size: 14px;
+font-size: 13px;
 color: #fff;
 padding: 3px 10px;
 
@@ -311,4 +311,27 @@ margin-bottom: 8px;
 
 .app-inner {
        background: #f4f4f4 !important;
+}
+
+th.action-cage{
+
+    width: 200px;
+    text-align: center;
+}
+td.action-cage{
+   width: 200px;
+    text-align: center; 
+    button{
+        margin: 0px 5px 0px 5px;
+    }
+}
+
+
+
+
+.btn-group-xs > .btn, .btn-xs {
+    padding: 2px 5px !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+    border-radius: 2px !important;
 }
