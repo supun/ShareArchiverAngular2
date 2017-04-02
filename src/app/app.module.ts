@@ -19,6 +19,7 @@ import { JobStatusComponent } from './system/job-status/job-status.component';
 import { RepositoryStatusComponent } from './system/repository-status/repository-status.component';
 import { JobManagementComponent } from './configuration/job-management/job-management.component';
 import { SystemStatusComponent } from './system/system-status/system-status.component';
+import { GlobalConfigurationComponent } from './system-configuration/global-configuration/global-configuration.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SystemStatusComponent } from './system/system-status/system-status.comp
     JobStatusComponent,
     RepositoryStatusComponent,
     JobManagementComponent,
-    SystemStatusComponent
+    SystemStatusComponent,
+    GlobalConfigurationComponent
   ],
   imports: [
     BrowserModule,

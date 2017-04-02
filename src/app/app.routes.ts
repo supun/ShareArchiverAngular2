@@ -1,3 +1,4 @@
+import { GlobalConfigurationComponent } from './system-configuration/global-configuration/global-configuration.component';
 import { SystemStatusComponent } from './system/system-status/system-status.component';
 import { JobManagementComponent } from './configuration/job-management/job-management.component';
 import { RepositoryStatusComponent } from './system/repository-status/repository-status.component';
@@ -53,6 +54,21 @@ export const appRoutes: Routes = [
           {
             path:'system-status',
             component:SystemStatusComponent
+          }
+      ]
+     
+   },
+   {
+      path:'system-configuration',
+      children:[
+           {
+               path: '',
+               redirectTo:'global-configuration',
+               pathMatch: 'full'
+            },
+          {
+            path:'global-configuration',
+            component:GlobalConfigurationComponent
           }
       ]
      
