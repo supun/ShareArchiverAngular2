@@ -12,10 +12,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MainComponent } from './main/main.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
-import { CompnayConfigurationComponent } from './compnay-configuration/compnay-configuration.component';
-import { CompanyManagementComponent } from './company-management/company-management.component';
-import { AgentManagementComponent } from './agent-management/agent-management.component';
-import { JobStatusComponent } from './job-status/job-status.component';
+import { CompanyManagementComponent } from './configuration/company-management/company-management.component';
+import { AgentManagementComponent } from './configuration/agent-management/agent-management.component';
+import { JobStatusComponent } from './system/job-status/job-status.component';
+import { RepositoryStatusComponent } from './system/repository-status/repository-status.component';
+import { JobManagementComponent } from './configuration/job-management/job-management.component';
+import { SystemStatusComponent } from './system/system-status/system-status.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { JobStatusComponent } from './job-status/job-status.component';
     ToolbarComponent,
     MainComponent,
     ConfigurationComponent,
-    CompnayConfigurationComponent,
     CompanyManagementComponent,
     AgentManagementComponent,
-    JobStatusComponent
+    JobStatusComponent,
+    RepositoryStatusComponent,
+    JobManagementComponent,
+    SystemStatusComponent
   ],
   imports: [
     BrowserModule,
