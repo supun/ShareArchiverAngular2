@@ -24,12 +24,72 @@
                    
                 </div>
 
+
+<ul class="menu-toggle-list">
+<li class="ng-scope">
+  <button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage sa-flex-row'>
+      <div class="main-icn"><i class="material-icons">home</i></div>
+       <div class='main-cn'>main </div>
+       <div class='main-arrow'><i class="material-icons">keyboard_arrow_right</i> </div>
+       </div>
+       </button>
+
+<ul class="sub-item">
+
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+      
+    </ul>
+
+
+</li>
+
+
+<li class="ng-scope">
+  <button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage sa-flex-row'>
+      <div class="main-icn"><i class="material-icons">home</i></div>
+       <div class='main-cn'>main </div>
+       <div class='main-arrow'><i class="material-icons">keyboard_arrow_right</i> </div>
+       </div>
+       </button>
+
+<ul class="sub-item">
+
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+      
+    </ul>
+
+
+</li>
+
+
+
+    </ul>
+
+
+<!--
         <md-nav-list>
             <md-list-item >
-                <i class="material-icons">home</i><a (click)="nav.close()" [routerLink]="['/main']">Main</a>
+
+        <i class="material-icons">home</i><a (click)="nav.close()" [routerLink]="['/main']">Main</a> 
+                      
+           <ul>
+               <li>dfdgfdg</li>
+                <li>dfdgfdg</li>
+                 <li>dfdgfdg</li>
+           </ul>
+           
             </md-list-item>
             <md-list-item >
                 <i class="material-icons">home</i><a (click)="nav.close()" [routerLink]="['/components']">Components</a>
+                
             </md-list-item>
             <md-list-item >
                 <i class="material-icons">home</i><a (click)="nav.close()" [routerLink]="['/system']">System</a>
@@ -49,7 +109,7 @@
             <md-list-item >
                 <i class="material-icons">vpn_key</i><a (click)="nav.close()" [routerLink] ="['system-configuration']">Global Configuration</a>
             </md-list-item>
-        </md-nav-list>
+        </md-nav-list>-->
     </md-sidenav>
     <app-toolbar [nav]="nav"></app-toolbar>
     <router-outlet></router-outlet>

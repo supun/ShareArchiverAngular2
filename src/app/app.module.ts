@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import {MaterialModule} from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { ChartsModule } from 'ng2-charts';
+import { TreeModule, SharedModule } from 'primeng/primeng';
 import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -25,6 +26,7 @@ import { UserManagementComponent } from './user-group/user-management/user-manag
 import { GroupManagementComponent } from './user-group/group-management/group-management.component';
 import { AccountPolicyComponent } from './user-group/account-policy/account-policy.component';
 import { UserCompanyManagementComponent } from './user-group/user-company-management/user-company-management.component';
+import { FileExplorerComponent } from './system/file-explorer/file-explorer.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { UserCompanyManagementComponent } from './user-group/user-company-manage
     UserManagementComponent,
     GroupManagementComponent,
     AccountPolicyComponent,
-    UserCompanyManagementComponent
+    UserCompanyManagementComponent,
+    FileExplorerComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,9 @@ import { UserCompanyManagementComponent } from './user-group/user-company-manage
     HttpModule,
     RouterModule.forRoot(appRoutes),
     [MaterialModule.forRoot(),FlexLayoutModule],
-    ChartsModule
+    ChartsModule,
+    TreeModule, 
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
