@@ -12,8 +12,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./file-explorer.component.css']
 })
 export class FileExplorerComponent implements OnInit {
-  data: any[] = [];
-  hash = {};
   dataTable = [
     {
       "name":"Supun1",
@@ -70,121 +68,69 @@ export class FileExplorerComponent implements OnInit {
       "city":"CMB"
     }
   ];
-  selectedNodes: any[] = [];
-
-  constructor(){
-    this.data =
-      [
+  nodes = [
+    {
+      id: 1,
+      name: 'root1',
+      children: [
+        { id: 2, name: 'child1' },
+        { id: 3, name: 'child2' }
+      ]
+    },
+    {
+      id: 4,
+      name: 'root2',
+      children: [
+        { id: 5, name: 'child2.1' },
         {
-          "label": "Documents",
-          "children": [{
-            "label": "Work",
-            "children": [{"label": "Expenses.doc", "children":[]}, {"label": "Resume.doc", "children":[]}]
-          },
-            {
-              "selected": false,
-              "label": "Home",
-              "children": [{"label": "Invoices.txt", "children":[]}]
-            }]
-        },
-        {
-          "label": "Pictures",
-          "children": [
-            {"label": "barcelona.jpg", "children":[]},
-            {"label": "logo.jpg", "children":[]},
-            {"label": "primeui.png", "children":[]}]
-        },
-        {
-          "label": "Movies",
-          "children": [{
-            "label": "Al Pacino",
-            "children": [{"label": "Scarface", "data": "Scarface Movie", "children":[]}, {"label": "Serpico", "data": "Serpico Movie", "children":[]}]
-          },
-            {
-              "label": "Robert De Niro",
-              "children": [{"label": "Goodfellas", "children":[]}, {"label": "Untouchables", "children":[]}]
-            }]
+          id: 6,
+          name: 'child2.2',
+          children: [
+            { id: 7, name: 'subsub' }
+          ]
         }
       ]
-
-    this.hash = this.buildDataHierarchy(this.data);
-  }
-
-  buildDataHierarchy(data: any[]): any {
-    let id = 1;
-    let hash = {};
-    let setNodeID = (node : any, parentId: number) => {
-      hash[id] = node;
-      node['selected'] = false;
-      node['nodeId'] = id;
-      node['parentNodeId'] = parentId;
-      if (node.children.length){
-        const parentId = id;
-        node.children.forEach(function(node: any){
-          id++;
-          setNodeID(node, parentId);
-        });
-      }
-      id++;
     }
-    data.forEach(function(node: any){
-      setNodeID(node, 0);
-    });
-    return hash;
+  ];
+  public check(node, $event) {
+           this.updateChildNodesCheckBox(node, $event.checked);
+           this.updateParentNodesCheckBox(node.parent);
+}
+public updateChildNodesCheckBox(node, checked) {
+  node.data.checked = checked;
+  if (node.children) {
+    node.children.forEach((child) => this.updateChildNodesCheckBox(child, checked));
   }
+}
+public updateParentNodesCheckBox(node) {
+  if (node && node.level > 0 && node.children) {
+    let allChildChecked = true;
+    let noChildChecked = true;
 
-  nodeSelected(toggleNode: any) {
-    // select / unselect all children (recursive)
-    let toggleChildren = (node: any) => {
-      node.children.forEach(function (child: any) {
-        child.selected = node.selected;
-        if (child.children.length) {
-          toggleChildren(child);
-        }
-      });
-    }
-    toggleChildren(toggleNode);
-
-    //update parent if needed (recursive)
-    let updateParent = (node: any) => {
-      if (node.parentNodeId != 0) {
-        const parentNode = this.hash[node.parentNodeId];
-        const siblings = parentNode.children;
-        parentNode.partialSelection = false;
-        let equalSiblings = true;
-        siblings.forEach(function(sibling: any){
-          if (sibling.selected !== node.selected){
-            equalSiblings = false;
-          }
-        });
-        if (equalSiblings){
-          parentNode.selected = node.selected;
-          if (parentNode.parentNodeId != 0){
-            updateParent(parentNode);
-          }
-        }else{
-          parentNode.partialSelection = true;
-        }
+    for (let child of node.children) {
+      if (!child.data.checked) {
+        allChildChecked = false;
+      } else if (child.data.checked) {
+        noChildChecked = false;
       }
     }
-    updateParent(toggleNode);
-    this.updateSelected();
-  }
 
-  updateSelected(){
-    this.selectedNodes = [];
-    for (let node in this.hash) {
-      if (this.hash[node].selected) {
-        let currentNode = this.hash[node];
-        let nodeLabel = currentNode['label'];
-        while (currentNode.parentNodeId !==0){
-          currentNode = this.hash[currentNode.parentNodeId];
-          nodeLabel = currentNode['label'] + ' > ' + nodeLabel;
-        }
-        this.selectedNodes.push(nodeLabel);
-      }
+    if (allChildChecked) {
+      node.data.checked = true;
+      node.data.indeterminate = false;
+    } else if (noChildChecked) {
+      node.data.checked = false;
+      node.data.indeterminate = false;
+    } else {
+      node.data.checked = true;
+      node.data.indeterminate = true;
     }
+    this.updateParentNodesCheckBox(node.parent);
   }
+}
+  constructor(){ }
+
+  
   ngOnInit() {
   }
 

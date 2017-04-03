@@ -24,6 +24,7 @@
     "@angular/platform-browser-dynamic": "^2.4.0",
     "@angular/router": "^3.4.0",
     "angular-material-expansion-panel": "^0.7.2",
+    "angular-tree-component": "^3.2.3",
     "angular2-datatable": "^0.6.0",
     "chart.js": "^2.5.0",
     "core-js": "^2.4.1",
