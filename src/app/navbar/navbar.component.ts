@@ -12,7 +12,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+  systemBtn = {show:false};
+  configBtn = {show:false};
+  userBtn = {show:false};
+  systemConfigBtn = {show:false};
   constructor() { }
 
   ngOnInit() {
