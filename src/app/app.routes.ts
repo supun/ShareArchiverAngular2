@@ -1,3 +1,4 @@
+import { FileExplorerComponent } from './system/file-explorer/file-explorer.component';
 import { GlobalConfigurationComponent } from './system-configuration/global-configuration/global-configuration.component';
 import { SystemStatusComponent } from './system/system-status/system-status.component';
 import { JobManagementComponent } from './configuration/job-management/job-management.component';
@@ -54,6 +55,10 @@ export const appRoutes: Routes = [
           {
             path:'system-status',
             component:SystemStatusComponent
+          },
+          {
+            path:'file-explorer',
+            component:FileExplorerComponent
           }
       ]
      
