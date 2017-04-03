@@ -1,3 +1,9 @@
+/*
+ * @Author: Supun Dharmarathne 
+ * @Date: 2017-04-03 16:24:00 
+ * @Last Modified by:   Supun Dharmarathne 
+ * @Last Modified time: 2017-04-03 16:24:00 
+ */
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +14,62 @@ import { Component, OnInit } from '@angular/core';
 export class FileExplorerComponent implements OnInit {
   data: any[] = [];
   hash = {};
-
+  dataTable = [
+    {
+      "name":"Supun1",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun2",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun3",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun1",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun2",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun3",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun1",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun2",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun3",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    }
+  ];
   selectedNodes: any[] = [];
 
   constructor(){

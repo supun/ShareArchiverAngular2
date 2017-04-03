@@ -16,60 +16,78 @@
                     <a href="#" data-ma-action="profile-menu-toggle">
                     <div class="sp-pic">
                             <img src="https://raw.githubusercontent.com/supun/ShareArchiverAngular2/gh-pages/assets/images/1.jpg" alt="" class="mCS_img_loaded">
-                        </div>
-
-                        
+                    </div>
                     </a>
-
-                   
-                </div>
+</div>
 
 
 <ul class="menu-toggle-list">
-<li class="ng-scope">
-  <button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage sa-flex-row'>
-      <div class="main-icn"><i class="material-icons">home</i></div>
-       <div class='main-cn'>main </div>
-       <div class='main-arrow'><i class="material-icons">keyboard_arrow_right</i> </div>
+<li>
+  <button md-button-toggle md-button md-ink-ripple (click)="systemBtn.show = !systemBtn.show"><div class='men-btn-cage sa-flex-row'>
+      <div class="main-icn"><i class="material-icons">adjust</i></div>
+       <div class='main-cn'>System</div>
+       <div class='main-arrow'><i class="material-icons">keyboard_arrow_down</i> </div>
        </div>
-       </button>
+  </button>
 
-<ul class="sub-item">
+<ul class="sub-item" [hidden]="!systemBtn.show">
 
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
-      
+    <li><button md-button-toggle md-button md-ink-ripple [routerLink]="['/system/system-status']" ><div class='men-btn-cage'>System Status</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple [routerLink]="['/system/job-status']"><div class='men-btn-cage'> Job Status</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple [routerLink]="['/system/file-explorer']"><div class='men-btn-cage'> File Explorer</div></button></li>  
     </ul>
 
 
 </li>
 
 
-<li class="ng-scope">
-  <button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage sa-flex-row'>
-      <div class="main-icn"><i class="material-icons">home</i></div>
-       <div class='main-cn'>main </div>
-       <div class='main-arrow'><i class="material-icons">keyboard_arrow_right</i> </div>
+<li>
+  <button md-button-toggle md-button md-ink-ripple (click)="configBtn.show = !configBtn.show"><div class='men-btn-cage sa-flex-row'>
+      <div class="main-icn"><i class="material-icons">settings</i></div>
+      <div class='main-cn'>Configuration </div>
+       <div class='main-arrow'><i class="material-icons">keyboard_arrow_down</i> </div>
        </div>
        </button>
 
-<ul class="sub-item">
+<ul class="sub-item" [hidden]="!configBtn.show">
 
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
-    <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
+    <li><button md-button-toggle md-button md-ink-ripple [routerLink]="['configuration/job-list']"><div class='men-btn-cage'>Job Management</div></button></li>
+    </ul>
+
+
+</li>
+<li>
+  <button md-button-toggle md-button md-ink-ripple (click)="userBtn.show = !userBtn.show"><div class='men-btn-cage sa-flex-row'>
+      <div class="main-icn"><i class="material-icons">account_circle</i></div>
+      <div class='main-cn'>Users and Groups </div>
+       <div class='main-arrow'><i class="material-icons">keyboard_arrow_down</i> </div>
+       </div>
+       </button>
+
+<ul class="sub-item" [hidden]="!userBtn.show">
+
     <li><button md-button-toggle md-button md-ink-ripple ><div class='men-btn-cage'> sub link 1</div></button></li>
       
     </ul>
 
 
 </li>
+<li>
+  <button md-button-toggle md-button md-ink-ripple (click)="systemConfigBtn.show = !systemConfigBtn.show"><div class='men-btn-cage sa-flex-row'>
+      <div class="main-icn"><i class="material-icons">settings_applications</i></div>
+      <div class='main-cn'>System Configuration </div>
+       <div class='main-arrow'><i class="material-icons">keyboard_arrow_down</i> </div>
+       </div>
+       </button>
+
+<ul class="sub-item" [hidden]="!systemConfigBtn.show">
+
+    <li><button md-button-toggle md-button md-ink-ripple [routerLink]="['system-configuration/global-configuration']"><div class='men-btn-cage'> Global Configuration</div></button></li>
+      
+    </ul>
 
 
+</li>
 
     </ul>
 
