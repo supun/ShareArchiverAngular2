@@ -7,6 +7,7 @@ import {MaterialModule} from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { ChartsModule } from 'ng2-charts';
 import { TreeModule, SharedModule } from 'primeng/primeng';
+import {DataTableModule} from "angular2-datatable";
 import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -57,7 +58,8 @@ import { FileExplorerComponent } from './system/file-explorer/file-explorer.comp
     [MaterialModule.forRoot(),FlexLayoutModule],
     ChartsModule,
     TreeModule, 
-    SharedModule
+    SharedModule,
+    DataTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

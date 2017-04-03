@@ -8,7 +8,62 @@ import { Component, OnInit } from '@angular/core';
 export class FileExplorerComponent implements OnInit {
   data: any[] = [];
   hash = {};
-
+  dataTable = [
+    {
+      "name":"Supun1",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun2",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun3",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun1",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun2",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun3",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun1",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun2",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    },
+    {
+      "name":"Supun3",
+      "email":"Testmail.com",
+      "age":24,
+      "city":"CMB"
+    }
+  ];
   selectedNodes: any[] = [];
 
   constructor(){
