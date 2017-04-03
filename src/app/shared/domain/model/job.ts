@@ -1,3 +1,9 @@
+/*
+ * @Author: Supun Dharmarathne 
+ * @Date: 2017-04-03 16:26:29 
+ * @Last Modified by:   Supun Dharmarathne 
+ * @Last Modified time: 2017-04-03 16:26:29 
+ */
 // domain class to handle job data
 export class Job {
 

@@ -1,3 +1,9 @@
+/*
+ * @Author: Supun Dharmarathne 
+ * @Date: 2017-04-03 16:24:16 
+ * @Last Modified by:   Supun Dharmarathne 
+ * @Last Modified time: 2017-04-03 16:24:16 
+ */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';

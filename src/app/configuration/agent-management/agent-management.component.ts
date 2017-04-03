@@ -1,3 +1,9 @@
+/*
+ * @Author: Supun Dharmarathne 
+ * @Date: 2017-04-03 16:24:36 
+ * @Last Modified by:   Supun Dharmarathne 
+ * @Last Modified time: 2017-04-03 16:24:36 
+ */
 import { Component, OnInit } from '@angular/core';
 
 @Component({
