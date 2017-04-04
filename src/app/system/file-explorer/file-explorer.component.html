@@ -1,0 +1,152 @@
+<div class="app-content">
+  
+
+<md-card>
+
+    <table class="table table-striped" [mfData]="dataTable" #mf="mfDataTable" [mfRowsOnPage]="5">
+    <thead>
+    <tr>
+        <th style="width: 20%">
+            <mfDefaultSorter by="name">Name</mfDefaultSorter>
+        </th>
+        <th style="width: 50%">
+            <mfDefaultSorter by="email">Email</mfDefaultSorter>
+        </th>
+        <th style="width: 10%">
+            <mfDefaultSorter by="age">Age</mfDefaultSorter>
+        </th>
+        <th style="width: 20%">
+            <mfDefaultSorter by="city">City</mfDefaultSorter>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of mf.data">
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td class="text-right">{{item.age}}</td>
+        <td>{{item.city | uppercase}}</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">
+            <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+     
+    <div class="mdcard-header">
+
+
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-6 ">
+                <h2 class="m-t-10">Local: E > FileArchieve </h2>
+            </div>
+            <div class="col-md-6 col-sm-6 text-right ">
+
+                <button md-button><i class="material-icons">select_all</i> Count</button>
+                <button md-button><i class="material-icons">assessment</i> Volume</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <md-divider></md-divider>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-4 ">
+
+            <md-list>
+                <h3 md-subheader>Folders</h3>
+                <md-divider></md-divider>
+                <tree-root
+  #tree
+  [nodes]="nodes"
+  [options]="treeOptions">
+
+  <template #treeNodeTemplate let-node="node" let-index="index" >
+    <!--<input
+      (change)="check( node, $event)"
+      type="checkbox"
+      [indeterminate]="node.data.indeterminate"
+      [checked]="node.data.checked">-->
+      <md-checkbox class="example-margin" (change)="check( node, $event)"  [indeterminate]="node.data.indeterminate" [checked]="node.data.checked"> {{ node.data.name }}</md-checkbox>
+  </template>
+</tree-root>
+
+
+
+            </md-list>
+        </div>
+
+        <div class="col-md-9 col-sm-9 ">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped bootgrid-table">
+                    <thead>
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Job Name</th>
+                            <th>Action</th>
+                            <th>Agent</th>
+                            <th>Policy</th>
+                            <th class='action-cage'>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</md-card>
+</div>

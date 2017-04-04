@@ -1,82 +1,917 @@
 <div class="app-content">
 
+
     <md-card>
-        <button md-button>FLAT</button>
-        <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
-        <button md-raised-button color="primary">PRIMARY RAISED</button>
-        <button md-raised-button color="accent">ACCENT RAISED</button>
-    </md-card>
-    <md-card>
+
+
+        <div class="mdcard-header">
+            <h2>Table heading
+                <small>This page covers tables that have a simple row header and a simple column header
+                                </small>
+            </h2>
+        </div>
+
         <div class="table-responsive">
-            <table class="table table-hover">
+            <table class="table table-hover table-striped bootgrid-table">
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                        <th>Nickname</th>
+
+                        <th>Name</th>
+                        <th>Preferred Name</th>
+                        <th>Company Tag</th>
+                        <th>Admin name</th>
+                        <th>Global Key</th>
+                        <th class='action-cage'>Company Login</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>Alexandra</td>
-                        <td>Christopher</td>
-                        <td>@makinton</td>
-                        <td>Ducky</td>
+                        <td>Evgeny</td>
+                        <td>Evgeny Enterprise</td>
+                        <td>evgeny</td>
+                        <td>evgeny_admin</td>
+                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
+                        <td class='action-cage'><button md-button class="btn bgm-orange btn-xs ">Login</button></td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>Madeleine</td>
-                        <td>Hollaway</td>
-                        <td>@hollway</td>
-                        <td>Cheese</td>
+                        <td>Evgeny</td>
+                        <td>Evgeny Enterprise</td>
+                        <td>evgeny</td>
+                        <td>evgeny_admin</td>
+                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
+                        <td class='action-cage'><button md-button class="btn bgm-orange btn-xs ">Login</button></td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>Sebastian</td>
-                        <td>Johnston</td>
-                        <td>@sebastian</td>
-                        <td>Jaycee</td>
+                        <td>Evgeny</td>
+                        <td>Evgeny Enterprise</td>
+                        <td>evgeny</td>
+                        <td>evgeny_admin</td>
+                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
+                        <td class='action-cage'><button md-button class="btn bgm-orange btn-xs ">Login</button></td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>Mitchell</td>
-                        <td>Christin</td>
-                        <td>@mitchell4u</td>
-                        <td>AdskiDeAnus</td>
+                        <td>Evgeny</td>
+                        <td>Evgeny Enterprise</td>
+                        <td>evgeny</td>
+                        <td>evgeny_admin</td>
+                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
+                        <td class='action-cage'><button md-button class="btn bgm-orange btn-xs ">Login</button></td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>Elizabeth</td>
-                        <td>Belkitt</td>
-                        <td>@belkitt</td>
-                        <td>Goat</td>
+                        <td>Evgeny</td>
+                        <td>Evgeny Enterprise</td>
+                        <td>evgeny</td>
+                        <td>evgeny_admin</td>
+                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
+                        <td class='action-cage'><button md-button class="btn bgm-orange btn-xs ">Login</button></td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>Benjamin</td>
-                        <td>Parnell</td>
-                        <td>@wayne234</td>
-                        <td>Pokie</td>
+                        <td>Evgeny</td>
+                        <td>Evgeny Enterprise</td>
+                        <td>evgeny</td>
+                        <td>evgeny_admin</td>
+                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
+                        <td class='action-cage'><button md-button class="btn bgm-orange btn-xs ">Login</button></td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>Katherine</td>
-                        <td>Buckland</td>
-                        <td>@anitabelle</td>
-                        <td>Wokie</td>
+                        <td>Evgeny</td>
+                        <td>Evgeny Enterprise</td>
+                        <td>evgeny</td>
+                        <td>evgeny_admin</td>
+                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
+                        <td class='action-cage'><button md-button class="btn bgm-orange btn-xs ">Login</button></td>
                     </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Nicholas</td>
-                        <td>Walmart</td>
-                        <td>@mwalmart</td>
-                        <td>Spike</td>
-                    </tr>
+
                 </tbody>
             </table>
+
+
+        </div>
+
+        <div id="data-table-selection-footer" class="bootgrid-footer container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="pagination">
+                        <li class="first disabled" aria-disabled="true">
+                            <a data-page="first" class="button"><i class="material-icons">more_vert</i>
+        </a></li>
+                        <li class="prev disabled" aria-disabled="true">
+                            <a data-page="prev" class="button"><i class="material-icons">keyboard_arrow_left</i>
+            </a></li>
+                        <li class="page-1 active" aria-disabled="false" aria-selected="true">
+                            <a data-page="1" class="button">1</a></li>
+                        <li class="page-2" aria-disabled="false" aria-selected="false">
+                            <a data-page="2" class="button">2</a></li>
+                        <li class="next" aria-disabled="false">
+                            <a data-page="next" class="button"><i class="material-icons">keyboard_arrow_right</i></a>
+                        </li>
+                        <li class="last" aria-disabled="false">
+                            <a data-page="last" class="button">
+                                <i class="material-icons">more_vert</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 infoBar">
+                    <div class="infos">Showing 1 to 10 of 20 entries</div>
+                </div>
+            </div>
+        </div>
+
+    </md-card>
+    <md-card>
+        <div class="card-body">
+
+            <div class="list-group-item">
+                <div class="lgi-heading m-b-5">Storage Bars Report rv1</div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" aria-valuemax="100" style="width: 20%">
+                        <span class="sr-only">20% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="lgi-heading m-b-5">Storage Bars Report rv1</div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        <span class="sr-only">60% Complete (warning)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="lgi-heading m-b-5">Storage Bars Report rv1</div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        <span class="sr-only">80% Complete (danger)</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </md-card>
+
+
+    <!--system status code-->
+
+    <md-card class="p-0">
+
+        <div class="mdcard-header">
+            <h2>System Status </h2>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="w-50">File Store Tag</th>
+                        <th class="w-50">Available Free Space</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="w-50">--</td>
+                        <td class="w-50">--</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th colspan="2">File Store Tag</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td class="w-100" colspan="2">
+                            <md-card-content>
+
+
+                                <div class="list-group-item">
+                                    <div class="lgi-heading m-b-5">Volume Status</div>
+
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </md-card-content>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="w-50">Drive Name</th>
+                        <th class="w-50">Available Free Space</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="w-50">Srtvse</td>
+                        <td class="w-50">567GB</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+    </md-card>
+
+    <md-card class="p-0">
+
+        <div class="mdcard-header">
+            <h2>Repository Information </h2>
+        </div>
+
+
+
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+
+                <tbody>
+                    <tr>
+                        <td class="w-50">Persistence Engine</td>
+                        <td class="w-50">Online Online</td>
+
+                    </tr>
+                    <tr>
+                        <td class="w-50">Indexing Engine</td>
+                        <td class="w-50">Online Online</td>
+
+                    </tr>
+                    <tr>
+                        <td class="w-50">Total Folders</td>
+                        <td class="w-50">7</td>
+
+                    </tr>
+                    <tr>
+                        <td class="w-50">Repository Size</td>
+                        <td class="w-50">3.78 MB</td>
+
+                    </tr>
+                    <tr>
+                        <td class="w-50">Stubbed Volume</td>
+                        <td class="w-50">3.78 MB</td>
+
+                    </tr>
+                    <tr>
+                        <td class="w-50">Replication Status</td>
+                        <td class="w-50">Offline</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+    </md-card>
+
+
+    <div class="row row-set">
+        <div class="col-md-6 col-sm-6">
+            <md-card class="p-0 ">
+                <div class="mdcard-header">
+                    <h2>Repository Stats (Number of Files) </h2>
+
+                </div>
+                <div class="mini-charts-item bgm-cyan">
+                    <div class="clearfix">
+                        <div class="chart stats-bar">
+                            <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
+                        </div>
+                        <div class="count">
+                            <small>Number of Files</small>
+                            <h2>987,459</h2>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+        <div class="col-md-6 col-sm-6 ">
+            <md-card class="p-0 ">
+                <div class="mdcard-header">
+                    <h2>Repository Stats (Data Volume in MBs) </h2>
+                </div>
+                <div class="mini-charts-item bgm-purple">
+                    <div class="clearfix">
+                        <div class="chart stats-bar-2">
+                            <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
+                        </div>
+                        <div class="count">
+                            <small>Data Volume</small>
+                            <h2>356,785K</h2>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+
+    </div>
+
+
+
+
+
+    <md-card class="p-0 ">
+        <div class="mdcard-header">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 ">
+                    <h2 class="m-t-10">File Count </h2>
+                </div>
+                <div class="col-md-6 col-sm-6 text-right ">
+
+                    <button md-button><i class="material-icons">select_all</i> Count</button>
+                    <button md-button><i class="material-icons">assessment</i> Volume</button>
+                </div>
+            </div>
+        </div>
+        <div class="mini-charts-item bgm-orange">
+            <div class="clearfix">
+                <div class="chart stats-line">
+                    <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
+                </div>
+                <div class="count">
+                    <small>Total Sales</small>
+                    <h2>$ 458,778</h2>
+                </div>
+            </div>
         </div>
     </md-card>
+
+
+
+
+
+    <md-card class="p-0 ">
+        <div class="mdcard-header">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 ">
+                    <h2 class="m-t-10">File Count </h2>
+                </div>
+                <div class="col-md-6 col-sm-6 text-right ">
+
+                    <button md-button><i class="material-icons">select_all</i> Count</button>
+                    <button md-button><i class="material-icons">assessment</i> Volume</button>
+                </div>
+            </div>
+        </div>
+        <div class="mini-charts-item bgm-bluegray">
+            <div class="clearfix">
+                <div class="chart stats-line-2">
+                    <canvas width="68" height="35" style="display: inline-block; width: 68px; height: 35px; vertical-align: top;"></canvas>
+                </div>
+                <div class="count">
+                    <small>Support Tickets</small>
+                    <h2>23,856</h2>
+                </div>
+            </div>
+        </div>
+    </md-card>
+
 </div>
+
+<!-- end system status code-->
+
+<!-- end job status code-->
+<md-card>
+    <div class="mdcard-header">
+        <h2>Job Status
+            <small>his page covers tables that have a simple row header and a simple column header
+                                </small>
+        </h2>
+    </div>
+
+
+    <md-tab-group>
+        <md-tab label="All Jobs">
+
+            <div class="table-responsive">
+                <table class="table table-hover table-striped bootgrid-table">
+                    <thead>
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Job Name</th>
+                            <th>Action</th>
+                            <th>Agent</th>
+                            <th>Policy</th>
+                            <th class='action-cage'>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </md-tab>
+        <md-tab label="Backups">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped bootgrid-table">
+                    <thead>
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Job Name</th>
+                            <th>Action</th>
+                            <th>Agent</th>
+                            <th>Policy</th>
+                            <th class='action-cage'>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+        </md-tab>
+    </md-tab-group>
+
+
+
+</md-card>
+<!-- end job status code-->
+
+<!-- end job status code-->
+
+<md-card>
+
+    <div class="mdcard-header">
+
+
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-6 ">
+                <h2 class="m-t-10">Local: E > FileArchieve </h2>
+            </div>
+            <div class="col-md-6 col-sm-6 text-right ">
+
+                <button md-button><i class="material-icons">select_all</i> Count</button>
+                <button md-button><i class="material-icons">assessment</i> Volume</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <md-divider></md-divider>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-4 ">
+
+            <md-list>
+                <h3 md-subheader>Folders</h3>
+                <md-divider></md-divider>
+                <md-list-item>
+                    <md-icon md-list-avatar>folder</md-icon>
+                    <h4 md-line>folder.name</h4>
+                    <p md-line> folder.updated | date </p>
+                </md-list-item>
+
+
+
+            </md-list>
+        </div>
+
+        <div class="col-md-9 col-sm-9 ">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped bootgrid-table">
+                    <thead>
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Job Name</th>
+                            <th>Action</th>
+                            <th>Agent</th>
+                            <th>Policy</th>
+                            <th class='action-cage'>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</md-card>
+<!-- end job status code-->
+
+
+<!--  job list code-->
+<md-card>
+    <div class="mdcard-header">
+        <h2>Job Status
+            <small>his page covers tables that have a simple row header and a simple column header
+                                </small>
+        </h2>
+    </div>
+
+
+
+
+    <div class="table-responsive">
+        <table class="table table-hover table-striped bootgrid-table">
+            <thead>
+                <tr>
+
+                    <th>ID</th>
+                    <th>Job Name</th>
+                    <th>Action</th>
+                    <th>Agent</th>
+                    <th>Policy</th>
+                    <th class='action-cage'>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>35</td>
+                    <td>test murugan</td>
+                    <td>Archive & Stub</td>
+                    <td>Administrator</td>
+                    <td>all</td>
+                    <td class='action-cage'>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">mode_edit</i> </button>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">delete_forever</i></button>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">content_copy</i></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>test murugan</td>
+                    <td>Archive & Stub</td>
+                    <td>Administrator</td>
+                    <td>all</td>
+                    <td class='action-cage'>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">mode_edit</i> </button>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">delete_forever</i></button>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">content_copy</i></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>test murugan</td>
+                    <td>Archive & Stub</td>
+                    <td>Administrator</td>
+                    <td>all</td>
+                    <td class='action-cage'>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">mode_edit</i> </button>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">delete_forever</i></button>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">content_copy</i></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>test murugan</td>
+                    <td>Archive & Stub</td>
+                    <td>Administrator</td>
+                    <td>all</td>
+                    <td class='action-cage'>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">mode_edit</i> </button>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">delete_forever</i></button>
+                        <button md-mini-fab class="bgm-orange btn-icon"><i class="material-icons">content_copy</i></button>
+                    </td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+
+
+
+
+</md-card>
+<!-- end job list code-->
+
+<!-- globale configarations code-->
+<md-card>
+    <div class="mdcard-header">
+        <h2>Global Configuration
+            <small>System edit form
+                                </small>
+        </h2>
+    </div>
+    <div class="m-r-15 m-l-15">
+        <div class="row">
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="DNS Suffix" value="us-west-2.compute.internal">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="DNS Server 1" value="172.31.0.2">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="DNS Server 2" value="172.33.0.4">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="User Name (domain\username)" value="">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Password" value="">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Max no. of Versions" value="5">
+                    </md-input-container>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Disk Warning Limit" value="90">
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+
+        <div class="row checkbox-cage">
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Thumbnails on Summary</md-checkbox>
+                                   
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Lazy Archiving</md-checkbox>
+                                   </div>
+            </div>
+
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Lazy Export</md-checkbox>                   
+                </div>
+            </div>
+
+
+
+            <div class='col-md-6'>
+                <div class="form-group">
+ <md-checkbox class="example-margin" [(ngModel)]="checked"> Show Folder size in File Explorer</md-checkbox>
+
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Stubs Recovery Mode</md-checkbox>                    
+                </div>
+
+            </div>
+
+               <div class='col-md-6'>
+                <div class="form-group">
+                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Job Mapping</md-checkbox>                    
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="row m-t-20">
+         <div class='col-md-6'>File Authorization Mode</div>
+          <div class='col-md-6'>
+<md-radio-group [(ngModel)]="align">
+        <md-radio-button class="example-margin" value="start"> Use Share & NTFS Permissions	</md-radio-button>
+        <md-radio-button class="example-margin" value="end">NTFS Permissions only</md-radio-button>
+      </md-radio-group>
+
+          </div>
+    </div>
+
+<div class="row m-t-20 m-b-20">
+     <div class='col-md-6'> 
+
+         <div class="row">
+               <div class='col-md-9'>
+               <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Disk Warning LimitGlobal Excluded File Type" value="">
+                    </md-input-container>
+                </div>
+                
+                 
+         </div>
+         <div class='col-md-3'><button md-raised-button>Add</button></div>
+        </div>
+     </div>
+        <div class='col-md-6'> 
+
+         <div class="row">
+               <div class='col-md-9'>
+               <div class="form-group">
+                    <md-input-container>
+                        <input mdInput placeholder="Disk Warning LimitGlobal Excluded File Type" value="">
+                    </md-input-container>
+                </div>
+                
+                 
+         </div>
+         <div class='col-md-3'><button md-raised-button>Remove</button></div>
+        </div>
+     </div>
+  </div>
+    </div>
+
+ <md-divider></md-divider>
+<div class="row">
+    <div class='col-md-12 m-t-20 text-center'> 
+        <button md-raised-button class="txt-white btn btn-lg btn-primary ">
+            <i class="material-icons">system_update_alt</i> Update
+            </button> 
+            </div>
+</div>
+</md-card>
+<!-- end globale configarations code-->

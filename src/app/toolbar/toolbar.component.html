@@ -1,8 +1,18 @@
 <div fxLayout="column" fxLayoutAlign="start stretch">
     <md-toolbar class="app-toolbar" color="primary">
-        <button md-icon-button (click)="openNavBar()">
-                    <md-icon >menu</md-icon>
+
+<div class="loto-top">
+
+<button md-icon-button  (click)="openNavBar()" class="top-icon bgm-deeporange">
+                    <i *ngIf="nav.opened == false" class="material-icons">keyboard_arrow_right</i>
+                    <i *ngIf="nav.opened == true" class="material-icons">keyboard_arrow_left</i>
         </button>
+
+
+       
+</div>
+
+        
 
         <span style="margin-left: 20px" class="example-fill-remaining-space"> ShareArchiver</span>
         

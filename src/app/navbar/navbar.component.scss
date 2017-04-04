@@ -46,3 +46,78 @@ md-toolbar {
 .menu-active {
     color: red
 }
+
+.menu-toggle-list{
+    width: 250px;
+    padding-left: 0px;
+    margin-left: 0px;
+
+    list-style: none;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    li{      
+        padding-left: 20px;
+        padding: 0px;
+    }
+
+
+   .mat-button {
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    display: block;
+    -webkit-box-align: inherit;
+    -webkit-align-items: inherit;
+    align-items: inherit;
+    line-height: 40px;
+    margin: 0;
+    max-height: 40px;
+    overflow: hidden;
+    padding: 0px 16px;
+    text-align: left;
+    text-decoration: none;
+    white-space: normal;
+    width: 100%;
+    }
+
+
+    .sub-item{
+
+    padding-left: 20px;
+    margin-left: 0px;
+    list-style: none;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+      li{      
+        padding-left: 20px;
+        padding: 0px;
+    }
+
+     .mat-button {
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    display: block;
+    -webkit-box-align: inherit;
+    -webkit-align-items: inherit;
+    align-items: inherit;
+    line-height: 40px;
+    margin: 0;
+    max-height: 40px;
+    overflow: hidden;
+    padding: 0px 30px;
+    text-align: left;
+    text-decoration: none;
+    white-space: normal;
+    width: 100%;
+    }
+
+
+
+
+    }
+
+}
