@@ -385,3 +385,30 @@ display: -webkit-box;
 
 }
 
+
+.dtbl{
+    display: table;
+
+    
+}
+
+.dtbl-cell{
+    display: table-cell;
+    vertical-align: middle;
+
+   
+}
+
+.mat-checkbox-label > div{
+    i{
+    margin-right: 10px;
+    position: absolute;
+    color: #727272;
+
+    } 
+&>span{
+        padding-left: 31px;
+}
+
+
+}
