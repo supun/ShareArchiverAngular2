@@ -20,20 +20,24 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MainComponent } from './main/main.component';
-import { ConfigurationComponent } from './configuration/configuration.component';
-import { GlobalConfigurationComponent } from './system-configuration/global-configuration/global-configuration.component';
-import { CompanyManagementComponent } from './configuration/company-management/company-management.component';
-import { AgentManagementComponent } from './configuration/agent-management/agent-management.component';
-import { JobStatusComponent } from './system/job-status/job-status.component';
-import { RepositoryStatusComponent } from './system/repository-status/repository-status.component';
-import { JobManagementComponent } from './configuration/job-management/job-management.component';
-import { SystemStatusComponent } from './system/system-status/system-status.component';
+import { ConfigurationComponent } from './component/configuration/configuration.component';
+import { GlobalConfigurationComponent } from './component/system-configuration/global-configuration/global-configuration.component';
+import { CompanyManagementComponent } from './component/configuration/company-management/company-management.component';
+import { AgentManagementComponent } from './component/configuration/agent-management/agent-management.component';
+import { JobStatusComponent } from './component/system/job-status/job-status.component';
+import { RepositoryStatusComponent } from './component/system/repository-status/repository-status.component';
+import { JobManagementComponent } from './component/configuration/job-management/job-management.component';
+import { SystemStatusComponent } from './component/system/system-status/system-status.component';
 
-import { UserManagementComponent } from './user-group/user-management/user-management.component';
-import { GroupManagementComponent } from './user-group/group-management/group-management.component';
-import { AccountPolicyComponent } from './user-group/account-policy/account-policy.component';
-import { UserCompanyManagementComponent } from './user-group/user-company-management/user-company-management.component';
-import { FileExplorerComponent } from './system/file-explorer/file-explorer.component';
+import { UserManagementComponent } from './component/user-group/user-management/user-management.component';
+import { GroupManagementComponent } from './component/user-group/group-management/group-management.component';
+import { AccountPolicyComponent } from './component/user-group/account-policy/account-policy.component';
+import { UserCompanyManagementComponent } from './component/user-group/user-company-management/user-company-management.component';
+import { FileExplorerComponent } from './component/system/file-explorer/file-explorer.component';
+import { PolicyManagementComponent } from './component/configuration/policy-management/policy-management.component';
+import { VolumeManagementComponent } from './component/configuration/volume-management/volume-management.component';
+import { SharedFolderComponent } from './component/configuration/shared-folder/shared-folder.component';
+import { AgentRegistrationComponent } from './component/configuration/agent-registration/agent-registration.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +58,11 @@ import { FileExplorerComponent } from './system/file-explorer/file-explorer.comp
     GroupManagementComponent,
     AccountPolicyComponent,
     UserCompanyManagementComponent,
-    FileExplorerComponent
+    FileExplorerComponent,
+    PolicyManagementComponent,
+    VolumeManagementComponent,
+    SharedFolderComponent,
+    AgentRegistrationComponent
   ],
   imports: [
     BrowserModule,

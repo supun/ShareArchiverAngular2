@@ -1,12 +1,16 @@
-import { FileExplorerComponent } from './system/file-explorer/file-explorer.component';
-import { GlobalConfigurationComponent } from './system-configuration/global-configuration/global-configuration.component';
-import { SystemStatusComponent } from './system/system-status/system-status.component';
-import { JobManagementComponent } from './configuration/job-management/job-management.component';
-import { RepositoryStatusComponent } from './system/repository-status/repository-status.component';
+import { AgentRegistrationComponent } from './component/configuration/agent-registration/agent-registration.component';
+import { SharedFolderComponent } from './component/configuration/shared-folder/shared-folder.component';
+import { VolumeManagementComponent } from './component/configuration/volume-management/volume-management.component';
+import { PolicyManagementComponent } from './component/configuration/policy-management/policy-management.component';
+import { FileExplorerComponent } from './component/system/file-explorer/file-explorer.component';
+import { GlobalConfigurationComponent } from './component/system-configuration/global-configuration/global-configuration.component';
+import { SystemStatusComponent } from './component/system/system-status/system-status.component';
+import { JobManagementComponent } from './component/configuration/job-management/job-management.component';
+import { RepositoryStatusComponent } from './component/system/repository-status/repository-status.component';
 import { Component } from '@angular/core';
-import { JobStatusComponent } from './system/job-status/job-status.component';
-import { CompanyManagementComponent } from './configuration/company-management/company-management.component';
-import { AgentManagementComponent } from './configuration/agent-management/agent-management.component';
+import { JobStatusComponent } from './component/system/job-status/job-status.component';
+import { CompanyManagementComponent } from './component/configuration/company-management/company-management.component';
+import { AgentManagementComponent } from './component/configuration/agent-management/agent-management.component';
 import { MainComponent } from './main/main.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -37,7 +41,24 @@ export const appRoutes: Routes = [
             {
               path:'job-list',
               component:JobManagementComponent
+            },
+            {
+              path:'policy-management',
+              component:PolicyManagementComponent
+            },
+             {
+              path:'agent-registration',
+              component:AgentRegistrationComponent
+            },
+            {
+              path:'volume-management',
+              component:VolumeManagementComponent
+            },
+            {
+              path:'shared-folder',
+              component:SharedFolderComponent
             }
+           
     ]
    },
    {
