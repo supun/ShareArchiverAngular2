@@ -1,3 +1,4 @@
+import { AuthGuardService } from './shared/service/login/auth-guard.service';
 import { AgentRegistrationComponent } from './component/configuration/agent-registration/agent-registration.component';
 import { SharedFolderComponent } from './component/configuration/shared-folder/shared-folder.component';
 import { VolumeManagementComponent } from './component/configuration/volume-management/volume-management.component';
@@ -24,6 +25,7 @@ export const appRoutes: Routes = [
    },
    {
     path:'configuration',
+    canActivate: [AuthGuardService],
     children: [
             {
                path: '',
