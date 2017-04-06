@@ -335,3 +335,87 @@ td.action-cage{
     line-height: 1.5 !important;
     border-radius: 2px !important;
 }
+
+
+
+
+
+.sa-flex-row{
+display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+ & >.main-icn{
+ height: 10em;
+  
+  margin: 0 .5em;
+  width: 15%;
+  justify-content:flex-start;
+  align-items:center;
+   .material-icons{
+       margin-top: 5px;
+    }
+}
+     
+ 
+  & >.main-cn{
+    width: 65%;
+    justify-content:flex-start;
+   
+    
+
+   }    
+ 
+  & >.main-arrow{
+      width: 15%;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  width: 10%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+   align-items:center;
+
+    .material-icons{
+       margin-top: 6px;
+    }
+ }
+
+}
+
+
+.dtbl{
+    display: table;
+
+    
+}
+
+.dtbl-cell{
+    display: table-cell;
+    vertical-align: middle;
+
+   
+}
+
+.mat-checkbox-label > div{
+    i{
+    margin-right: 10px;
+    position: absolute;
+    color: #727272;
+
+    } 
+&>span{
+        padding-left: 31px;
+}
+
+}
+
+
+
+.tree {
+
+margin-top: 20px !important;
+
+}
