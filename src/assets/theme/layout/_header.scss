@@ -114,24 +114,23 @@ md-input-container,md-select{
 
 
 .mat-toolbar.mat-primary {
-    background: #757575;
+    background: #ededed;
     color: rgba(255, 255, 255, 0.87);
+    border-bottom: 1px solid #dde1e5;
 }
 
 .loto-top {
-    background-image: url('https://trial.sharearchiver.com/archive/rfRes/org.richfaces.resource.MediaOutputResource.faces?do=eAF1krFrFEEUxl9WrjBJkUQxpAicEQRBZ7GJxSUgihhlzxSromf1du-5t8fszGTm7WUxKDY2Ngq2AQtbrfwLbIVYBPwDrMTCEAQbK2c30ciBUz6-997vfd-8!Q6t0sKJB9EQRygkqkysJ0NKufPy073XM-6cDAAqAwAtZ2H2SHVFa0modtr26eftX3sBTPSgNUJZklczTOYFZhQODWW-72zdV4mHmJITqS6MVqRYxIxMa1r2ycY4Inv!4!vVV9s73QCCCI6nEp27hQUxzDV4YY0XxmxzlXUimHS-p9!MYDh1oMh1GJPNUeaPMJHUqYxhOIZJ6jbgCbSMZ7ng9wtXqkOamkkSO0FS3MasSzzQ!WuVseRcrpU!vH4T094FCwsHd3jpuG4jmp!qvfiyX7vl!fyrO5r05tnz-Edvd6Xx03Oc1jYTw0S7ZvX4vBuFkcn-!M-pD7PdeneNP725CAtntqTO9B0jNXrbhMFcceQrjwHGgzx06t3u3a!fFreu!wkyYDjZ5JhrsV6yKdkLCQuGmab8zycwptq8CWshk8fxWblwQM3aasCFbF--uHx--VI79d1MV7ViH-rq0n8JlyrzG6eV2SM_');
+    
     width: 268px;
     height: 80px;
     background-position: 13px -10px;
-    background-color: #424242;
+  
     /* margin-left: -10px; */
     top: -10px;
     position: absolute;
     background-repeat: no-repeat;
     margin-left: -20px;
-    -webkit-box-shadow: 6px 1px 5px -2px rgba(0,0,0,0.16);
--moz-box-shadow: 6px 1px 5px -2px rgba(0,0,0,0.16);
-box-shadow: 6px 1px 5px -2px rgba(0,0,0,0.16);
+   
 }
 
 .mat-toolbar-row {
@@ -149,7 +148,7 @@ box-shadow: 9px 1px 5px -3px rgba(0,0,0,0.27);
         box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
     -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #ed7d29;
+   
 
 }
 
@@ -173,15 +172,18 @@ font-size: 14px !important;
     margin-right: 10px;
     color: #454545;
 }
-
+.s-profile{
+    border-bottom: 1px solid #ccc;
+}
 .s-profile>a {
     display: block;
-    height: 70px;
+    height: 131px;
     margin-bottom: 5px;
     width: 100%;
-    background: url(../images/profile-menu.jpg) left top no-repeat;
+    background: url(../images/logo.png) left top no-repeat;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: center center;
+    background-color: #fff;
 }
 
 .s-profile>a .sp-pic>img {
