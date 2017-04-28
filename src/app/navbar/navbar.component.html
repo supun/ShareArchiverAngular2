@@ -22,7 +22,7 @@
 
 
 <ul class="menu-toggle-list">
-<li>
+<li [ngClass]="systemBtn.show? 'aaa':''">
   <button md-button-toggle md-button md-ink-ripple (click)="systemBtn.show = !systemBtn.show"><div class='men-btn-cage sa-flex-row'>
       <div class="main-icn"><i class="material-icons">adjust</i></div>
        <div class='main-cn'>System</div>
@@ -41,7 +41,7 @@
 </li>
 
 
-<li>
+<li [ngClass]="configBtn.show? 'aaa':''">
   <button md-button-toggle md-button md-ink-ripple (click)="configBtn.show = !configBtn.show"><div class='men-btn-cage sa-flex-row'>
       <div class="main-icn"><i class="material-icons">settings</i></div>
       <div class='main-cn'>Configuration </div>
@@ -60,7 +60,7 @@
 
 
 </li>
-<li>
+<li [ngClass]="userBtn.show? 'aaa':''">
   <button md-button-toggle md-button md-ink-ripple (click)="userBtn.show = !userBtn.show"><div class='men-btn-cage sa-flex-row'>
       <div class="main-icn"><i class="material-icons">account_circle</i></div>
       <div class='main-cn'>Users and Groups </div>
@@ -76,7 +76,7 @@
 
 
 </li>
-<li>
+<li [ngClass]="systemConfigBtn.show? 'aaa':''">
   <button md-button-toggle md-button md-ink-ripple (click)="systemConfigBtn.show = !systemConfigBtn.show"><div class='men-btn-cage sa-flex-row'>
       <div class="main-icn"><i class="material-icons">settings_applications</i></div>
       <div class='main-cn'>System Configuration </div>
