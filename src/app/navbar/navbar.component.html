@@ -14,15 +14,14 @@
         <!-- // End of TO DO-->
 <div class="s-profile">
                     <a href="#" data-ma-action="profile-menu-toggle">
-                    <div class="sp-pic">
-                            <img src="https://raw.githubusercontent.com/supun/ShareArchiverAngular2/gh-pages/assets/images/1.jpg" alt="" class="mCS_img_loaded">
-                    </div>
+                   
                     </a>
+                    
 </div>
 
 
 <ul class="menu-toggle-list">
-<li [ngClass]="systemBtn.show? 'aaa':''">
+<li [ngClass]="systemBtn.show? 'tab-select':''">
   <button md-button-toggle md-button md-ink-ripple (click)="systemBtn.show = !systemBtn.show"><div class='men-btn-cage sa-flex-row'>
       <div class="main-icn"><i class="material-icons">adjust</i></div>
        <div class='main-cn'>System</div>
@@ -41,7 +40,7 @@
 </li>
 
 
-<li [ngClass]="configBtn.show? 'aaa':''">
+<li [ngClass]="configBtn.show? 'tab-select':''">
   <button md-button-toggle md-button md-ink-ripple (click)="configBtn.show = !configBtn.show"><div class='men-btn-cage sa-flex-row'>
       <div class="main-icn"><i class="material-icons">settings</i></div>
       <div class='main-cn'>Configuration </div>
@@ -60,7 +59,7 @@
 
 
 </li>
-<li [ngClass]="userBtn.show? 'aaa':''">
+<li [ngClass]="userBtn.show? 'tab-select':''">
   <button md-button-toggle md-button md-ink-ripple (click)="userBtn.show = !userBtn.show"><div class='men-btn-cage sa-flex-row'>
       <div class="main-icn"><i class="material-icons">account_circle</i></div>
       <div class='main-cn'>Users and Groups </div>
@@ -76,7 +75,7 @@
 
 
 </li>
-<li [ngClass]="systemConfigBtn.show? 'aaa':''">
+<li [ngClass]="systemConfigBtn.show? 'tab-select':''">
   <button md-button-toggle md-button md-ink-ripple (click)="systemConfigBtn.show = !systemConfigBtn.show"><div class='men-btn-cage sa-flex-row'>
       <div class="main-icn"><i class="material-icons">settings_applications</i></div>
       <div class='main-cn'>System Configuration </div>

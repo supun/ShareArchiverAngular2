@@ -32,8 +32,8 @@ th {
     abbr[title]:after {
         content: " (" attr(title) ")"
     }
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+    a[href="javascript:"]:after,
+    a[href="#"]:after {
         content: ""
     }
     blockquote,
@@ -4205,7 +4205,7 @@ a.thumbnail:hover {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
 }
 .progress-bar-danger {
-    background-color: #F44336
+    background-color: #f5ab35;
 }
 .progress-striped .progress-bar-danger {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -6292,7 +6292,7 @@ body {
     color: #FFC107!important
 }
 .bgm-orange {
-    background-color: #FF9800!important
+    background-color: #f5ae3b!important
 }
 .c-orange {
     color: #FF9800!important
@@ -6566,7 +6566,7 @@ h6 small {
 }
 .progress {
     border-radius: 0;
-    height: 5px;
+    height: 10px;
     margin-bottom: 0
 }
 
@@ -6818,7 +6818,7 @@ h6 small {
     margin-bottom: 30px
 }
 .mini-charts-item .chart {
-    padding: 21px 18px 0;
+    padding: 14px 18px 0;
     float: left
 }
 .mini-charts-item .chart.chart-pie {
@@ -6835,7 +6835,8 @@ h6 small {
     line-height: 100%;
     font-size: 22px;
     font-weight: 300;
-    color: #fff
+    color: #fff;
+        font-weight: 500;
 }
 .mini-charts-item .count>small {
     margin-bottom: 2px;
@@ -8026,5 +8027,24 @@ html:not(.ie9) .select.fg-line:before {
 }
 .btn i,.txt-white{
 color:#fff !important;
+
+}
+
+.tab-select{
+
+    border-right:3px solid #f5ab35;
+}
+
+.card-header{
+
+    border-bottom: 2px solid #caeee6;
+ margin-bottom: 15px;
+    
+        h2 {
+        font-size: 17px;
+        padding-bottom: 0px;
+        margin-bottom: 15px;
+
+      }
 
 }
