@@ -19,7 +19,7 @@ import { HomeComponent } from './home/home.component';
 export const appRoutes: Routes = [
   {
     path: '', 
-    redirectTo:'configuration',
+    redirectTo:'system',
     pathMatch: 'full'
    },
    {
@@ -66,7 +66,7 @@ export const appRoutes: Routes = [
       children:[
            {
                path: '',
-               redirectTo:'job-status',
+               redirectTo:'system-status',
                pathMatch: 'full'
             },
           {

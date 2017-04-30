@@ -19,25 +19,25 @@ export class SystemStatusComponent implements OnInit {
     {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'}
   ];
   private barChartbackgroundColor: any[] = [{
-    backgroundColor: '#f49b42',
+    backgroundColor: '#f5ab35',
     borderColor: '#1D871B'
   }, { // grey
-    backgroundColor: '#83b9f7',
+    backgroundColor: '#c5c1b9',
     borderColor: '#555'
   }]
 
   // Pie
-  public pieChartLabels:string[] = ['Single Instance', 'Duplicates'];
-  public pieChartData:number[] = [500, 100];
-  public pieChartType:string = 'pie';
-  public pieChartColor:any[] = [
+  public doughnutChartLabels:string[] = ['Single Instance', 'Duplicates'];
+  public doughnutChartData:number[] = [500, 100];
+  public doughnutChartType:string = 'doughnut';
+  public doughnutChartColor:any[] = [
     {     backgroundColor: [
-                "#f2bb80",
-                "#36A2EB"  ]},
+                "#f5ab35",
+                "#c5c1b9"  ]},
             {
               hoverBackgroundColor: [
                 "#FF6384",
-                "#36A2EB"
+                "#c5c1b9"
             ]}
   ];
   
