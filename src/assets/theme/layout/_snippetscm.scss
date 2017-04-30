@@ -115,7 +115,7 @@ html {
 }
 body {
     font-family: roboto;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.42857143;
     color: #5E5E5E;
     background-color: #edecec
@@ -277,7 +277,7 @@ pre {
 }
 .small,
 small {
-    font-size: 92%
+    font-size: 97%
 }
 .mark,
 mark {
@@ -6298,7 +6298,7 @@ body {
     color: #FF9800!important
 }
 .bgm-deeporange {
-    background-color: #FF5722!important
+    background-color: #f5ae3b!important
 }
 .c-deeporange {
     color: #FF5722!important
@@ -6643,7 +6643,7 @@ h6 small {
 }
 .card,
 .mini-charts-item {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .15)
+   // box-shadow: 0 1px 1px rgba(0, 0, 0, .15)
 }
 .tab-nav li {
     display: inline-block;
@@ -8048,3 +8048,54 @@ color:#fff !important;
       }
 
 }
+
+
+.sp-pic>img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    border: 3px solid rgba(0,0,0,.14);
+    box-sizing: content-box;
+}
+
+.user-log{
+    color:#969696;
+    font-size: 14px;
+    padding-right:10px;
+}
+.user-log-name{
+color:#000;
+    font-size: 14px;
+    padding-left:10px;
+    
+}
+
+.Store{
+   height:22px;
+}
+ .bar-lbl{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+ }
+
+ .card-main-head{
+    background-color: #b4b4b4;
+    padding: 10px;
+    margin-top: -25px !important;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 25px;
+
+    -webkit-border-top-left-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-topright: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+color:#fff;
+
+ }
+
