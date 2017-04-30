@@ -50,15 +50,15 @@ md-toolbar {
 .menu-toggle-list{
     width: 250px;
     padding-left: 0px;
-    margin-left: 0px;
-
+    margin-left: 15px imporant;
+     margin-top: 15px;
     list-style: none;
     padding: 0;
     max-width: 100%;
     overflow-x: hidden;
 
     li{      
-        padding-left: 20px;
+        padding-left: 30px;
         padding: 0px;
     }
 
@@ -86,7 +86,7 @@ md-toolbar {
     .sub-item{
 
     padding-left: 20px;
-    margin-left: 0px;
+    margin-left: 30px;
     list-style: none;
     padding: 0;
     max-width: 100%;
