@@ -1,5 +1,188 @@
 <div class="app-content">
   
+<div class="row">
+
+    <div class="col-sm-4 col-md-4">
+    <md-card>
+<div  class="card-main-head"> Folders </div>
+
+
+  <md-divider></md-divider>
+                <tree-root
+  #tree
+  [nodes]="nodes"
+  [options]="treeOptions">
+
+  <template #treeNodeTemplate let-node="node" let-index="index" >
+    <!--<input
+      (change)="check( node, $event)"
+      type="checkbox"
+      [indeterminate]="node.data.indeterminate"
+      [checked]="node.data.checked">-->
+      <md-checkbox class="example-margin" (change)="check( node, $event)"  [indeterminate]="node.data.indeterminate" [checked]="node.data.checked"> 
+       <div> <i class="material-icons">folder</i> <span>{{ node.data.name }}</span> </div>          
+          </md-checkbox>
+  </template>
+</tree-root>
+
+    </md-card>
+    </div>
+
+
+    <div class="col-sm-8 col-md-8">
+ <md-card class="p-0">
+
+
+            <div class="table-responsive">
+                <table class="table table-hover table-striped bootgrid-table">
+                    <thead>
+                        <tr>
+
+                            <th><i class="zmdi zmdi-file-text"></i> File Name</th>
+                            <th>Modified</th>
+                            <th>Type</th>
+                            <th>Size</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <i class="material-icons md-18">insert_drive_file</i> test.xcls</td>
+                            <td>2017-05-05 11.44</td>
+                            <td>Ms Excel</td>                           
+                            <td >2 Kb</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="material-icons md-18">insert_drive_file</i> test.xcls</td>
+                            <td>2017-05-05 11.44</td>
+                            <td>Ms Excel</td>                           
+                            <td >2 Kb</td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="material-icons md-18">insert_drive_file</i> test.xcls</td>
+                            <td>2017-05-05 11.44</td>
+                            <td>Ms Excel</td>                           
+                            <td >2 Kb</td>
+                        </tr>
+                     
+
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+    </md-card>
+    </div>
+
+    
+</div>
+
+<!-- start job status code-->
+<md-card>
+<div class="card-main-head"> cashbook1.xls - poperties</div>
+
+
+    <md-tab-group>
+        <md-tab label="All Jobs">
+
+            <div class="table-responsive">
+                <table class="table table-hover table-striped bootgrid-table">
+                  
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>cashbook.xls</td>                  
+                        </tr>
+                        <tr>
+                            <td>Path</td>
+                            <td>cashbook.xls</td>                  
+                        </tr>
+                     
+
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </md-tab>
+        <md-tab label="Backups">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped bootgrid-table">
+                    <thead>
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Job Name</th>
+                            <th>Action</th>
+                            <th>Agent</th>
+                            <th>Policy</th>
+                            <th class='action-cage'>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>test murugan</td>
+                            <td>Archive & Stub</td>
+                            <td>Administrator</td>
+                            <td>all</td>
+                            <td class='action-cage'><span class="lbl bgm-lightgreen">Completed</span></td>
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+        </md-tab>
+    </md-tab-group>
+
+
+
+</md-card>
+<!-- end job status code-->
+
 
 <md-card>
 
@@ -61,23 +244,7 @@
     <div class="row">
         <div class="col-md-3 col-sm-4 ">
            <h3 md-subheader>Folders</h3>
-                <md-divider></md-divider>
-                <tree-root
-  #tree
-  [nodes]="nodes"
-  [options]="treeOptions">
-
-  <template #treeNodeTemplate let-node="node" let-index="index" >
-    <!--<input
-      (change)="check( node, $event)"
-      type="checkbox"
-      [indeterminate]="node.data.indeterminate"
-      [checked]="node.data.checked">-->
-      <md-checkbox class="example-margin" (change)="check( node, $event)"  [indeterminate]="node.data.indeterminate" [checked]="node.data.checked"> 
-       <div> <i class="material-icons">folder</i> <span>{{ node.data.name }}</span> </div>          
-          </md-checkbox>
-  </template>
-</tree-root>
+              
         </div>
 
         <div class="col-md-9 col-sm-9 ">
