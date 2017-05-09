@@ -129,12 +129,12 @@ textarea {
     line-height: inherit
 }
 a {
-    color: #2196F3;
+    color: #f5ae3b;
     text-decoration: none
 }
 a:focus,
 a:hover {
-    color: #0a6ebd;
+    color: #d3681f;
     text-decoration: none
 }
 a:focus {
@@ -1398,6 +1398,12 @@ caption {
 .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: #f4f4f4
 }
+
+.table-hover>tbody>tr:hover {
+    background-color: #f5ae3b !important;
+    color: #fff !important;
+}
+
 table col[class*=col-] {
     position: static;
     float: none;
@@ -3757,7 +3763,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .breadcrumb>li+li:before {
     content: "/\00a0";
     padding: 0 5px;
-    color: #ccc
+    color: #000
 }
 .breadcrumb>.active {
     color: #7c7c7c
@@ -8085,18 +8091,31 @@ color:#000;
     background-color: #b4b4b4;
     padding: 10px;
     margin-top: -25px !important;
-    margin-left: -25px;
-    margin-right: -25px;
-    margin-bottom: 25px;
-
+    margin-left: -23px;
+    margin-right: -24px;
+    margin-bottom: 23px;
+    margin-top: -23px !important;
     -webkit-border-top-left-radius: 3px;
--webkit-border-top-right-radius: 3px;
--moz-border-radius-topleft: 3px;
--moz-border-radius-topright: 3px;
-border-top-left-radius: 3px;
-border-top-right-radius: 3px;
-color:#fff;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
 
+        &.light{
+        background-color: #f0f0f0;
+        color:#000;
+        font-weight: 500;
+    >th{
+           color:#000 !important;
+          font-weight: 500 !important;
+
+         
+
+    }
+
+        }
  }
 
  .font-col-1{
@@ -8115,6 +8134,38 @@ color:#fff;
     border-top:1px solid #dedede  !important;
 }
 
+.icon-list{
+    padding: 0px;
+    margin: 0px;
+
+    li{
+        display: inline-block;
+        padding:11px;
+       
+
+        &.icn-ref{            
+         background: url(../images/icn-file-refresh.png) center center no-repeat;           
+        }
+        &.icn-file-add{            
+         background: url(../images/icn-file-addfile.png) center center no-repeat;           
+        }
+        &.icn-add-dr{            
+         background: url(../images/icn-file-addfolder.png) center center no-repeat;           
+        }
+        &.icn-edit{            
+         background: url(../images/icn-file-eddit.png) center center no-repeat;           
+        }
+    }
+}
+
+ .icn-doc{            
+         background: url(../images/doc.png) 15px center no-repeat;  
+
+         &.set-icon{
+                  padding-left:45px !important;
+         }         
+        }
+
 
 .main-icn{
 
@@ -8125,5 +8176,8 @@ color:#fff;
 
     font-size: 18px;
 }
+.bdr-bot{
 
+    border-bottom: 1px solid #ccc;
+}
 
