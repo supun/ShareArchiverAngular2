@@ -296,14 +296,31 @@ padding: 3px 10px;
 }
 
 thead {
-background-color: #757575;
+background-color: #b4b4b4;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
+&.light{
+    background-color: #f0f0f0;
+    
+   
+
+    &tr > th{
+ color: #000 !important;
+  font-weight: 500;
+    }
+
+}
 
 }
 
 .table > thead > tr > th{
 background-color: #757575;
-color: #fff !important;
+
 
 }
 
@@ -312,7 +329,7 @@ margin-bottom: 8px;
 }
 
 .app-inner {
-       background: #f4f4f4 !important;
+       background: #f7f7f7 !important;
 }
 
 th.action-cage{
@@ -421,3 +438,4 @@ display: -webkit-box;
 margin-top: 20px !important;
 
 }
+
