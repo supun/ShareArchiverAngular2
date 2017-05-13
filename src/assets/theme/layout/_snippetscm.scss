@@ -6919,7 +6919,7 @@ h6 small {
     font-weight: 500;
     color: #333;
     border-width: 1px;
-    text-transform: uppercase
+   
 }
 .table.table-inner,
 .table>tbody>tr.active>td,
@@ -8155,6 +8155,19 @@ color:#000;
         &.icn-edit{            
          background: url(../images/icn-file-eddit.png) center center no-repeat;           
         }
+
+        &.icn-eye{            
+         background: url(../images/eye.png) center center no-repeat;           
+        }
+        &.icn-file{            
+         background: url(../images/icn-file.png) center center no-repeat;           
+        }
+        &.icn-link{            
+         background: url(../images/icn-file-link.png) center center no-repeat;           
+        }
+        &.icn-download{            
+         background: url(../images/icn-file-download.png) center center no-repeat;           
+        }
     }
 }
 
@@ -8179,5 +8192,9 @@ color:#000;
 .bdr-bot{
 
     border-bottom: 1px solid #ccc;
+}
+
+.mat-ink-bar {
+    background-color: #f5ab35 !important;
 }
 
