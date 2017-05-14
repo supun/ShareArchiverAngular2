@@ -90,7 +90,82 @@ export class FileExplorerComponent implements OnInit {
           ]
         }
       ]
+    },
+        {
+      id: 8,
+      name: 'root2',
+      children: [
+        { id: 9, name: 'child2.1' },
+        {
+          id: 10,
+          name: 'child2.2',
+          children: [
+            { id: 11, name: 'subsub' }
+          ]
+        }
+      ]
+    },
+        {
+      id: 12,
+      name: 'root2',
+      children: [
+        { id: 13, name: 'child2.1' },
+        {
+          id: 14,
+          name: 'child2.2',
+          children: [
+            { id: 15, name: 'subsub' }
+          ]
+        }
+      ]
+    },
+     {
+      id: 16,
+      name: 'root2'
+    },
+     {
+      id: 17,
+      name: 'root2'
     }
+    ,
+     {
+      id: 16,
+      name: 'root2'
+    },
+     {
+      id: 17,
+      name: 'root2'
+    }
+    ,
+     {
+      id: 16,
+      name: 'root2'
+    },
+     {
+      id: 17,
+      name: 'root2'
+    }
+    ,
+     {
+      id: 16,
+      name: 'root2'
+    },
+     {
+      id: 17,
+      name: 'root2'
+    }
+    ,
+     {
+      id: 16,
+      name: 'root2'
+    },
+     {
+      id: 17,
+      name: 'root2'
+    }
+
+
+
   ];
   public check(node, $event) {
            this.updateChildNodesCheckBox(node, $event.checked);
