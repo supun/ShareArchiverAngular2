@@ -1,125 +1,506 @@
+<md-card>
+    <div class="card-main-head"> Global Configuration</div>
+    <div class="row">
+        <div class="col-md-6">
 
-
-
-<md-card >
-<div class="card-main-head"> Global Configuration</div>
-<div class="row">
-    <div class="col-md-6">
-
-    <div class="row new-lbl">
-        <div class="col-md-4 "> DNS Server</div>
-         <div class="col-md-8"> 
-             <div class="fg-line">
-                       <input type="text" class="form-control" id="inputSuccess1" value="">
-                </div>
-         </div>
-    </div>
-
-      <div class="row new-lbl">
-        <div class="col-md-4"> 1
-DNS Server</div>
-         <div class="col-md-8"> 
-             <div class="fg-line">
-                       <input type="text" class="form-control" id="inputSuccess1" value="">
-                </div>
-         </div>
-    </div>
-
-      <div class="row new-lbl">
-        <div class="col-md-4"> 2
-User Name</div>
-         <div class="col-md-8"> 
-             <div class="fg-line">
-                       <input type="text" class="form-control" id="inputSuccess1" value="">
-                </div>
-         </div>
-    </div>
-
-      <div class="row new-lbl">
-        <div class="col-md-4"> Password</div>
-         <div class="col-md-8"> 
-             <div class="fg-line">
-                       <input type="text" class="form-control" id="inputSuccess1" value="">
-                </div>
-         </div>
-    </div>
-
-      <div class="row new-lbl">
-        <div class="col-md-4">
-
-Max no. of Versions</div>
-         <div class="col-md-8"> 
-             <div class="fg-line">
-                       <input type="text" class="form-control" id="inputSuccess1" value="">
-                </div>
-         </div>
-    </div>
-
-      <div class="row new-lbl">
-        <div class="col-md-4"> Disk Warning Limit (%)</div>
-         <div class="col-md-8"> 
-             <div class="fg-line">
-                       <input type="text" class="form-control" id="inputSuccess1" value="">
-                </div>
-         </div>
-    </div>
-
-    </div>
-
-     <div class="col-md-6">
-
-  <div class="row checkbox-cage">
-            <div class='col-md-12'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Thumbnails on Summary</md-checkbox>
-                                   
+            <div class="row new-lbl">
+                <div class="col-md-4 "> DNS Server</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
                 </div>
             </div>
 
-            <div class='col-md-12'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Lazy Archiving</md-checkbox>
-                                   </div>
-            </div>
-
-
-            <div class='col-md-12'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Lazy Export</md-checkbox>                   
+            <div class="row new-lbl">
+                <div class="col-md-4">
+                    DNS Server 1</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
                 </div>
             </div>
 
 
+            <div class="row new-lbl">
+                <div class="col-md-4">
+                    DNS Server 2</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
 
-            <div class='col-md-12'>
-                <div class="form-group">
- <md-checkbox class="example-margin" [(ngModel)]="checked"> Show Folder size in File Explorer</md-checkbox>
+            <div class="row new-lbl">
+                <div class="col-md-4">
+                    User Name</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row new-lbl">
+                <div class="col-md-4"> Password</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row new-lbl">
+                <div class="col-md-4">
+
+                    Max no. of Versions</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row new-lbl">
+                <div class="col-md-4"> Disk Warning Limit (%)</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row new-lbl">
+                <div class="col-md-4"> Disk Critical Limit (%)</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row new-lbl">
+                <div class="col-md-4"> Encryption File Size (MBs)</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="row checkbox-cage">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Thumbnails on Summary</md-checkbox>
+
+                    </div>
+                </div>
+
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Lazy Archiving</md-checkbox>
+                    </div>
+                </div>
+
+
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Lazy Export</md-checkbox>
+                    </div>
+                </div>
+
+
+
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Show Folder size in File Explorer</md-checkbox>
+
+                    </div>
+                </div>
+
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Stubs Recovery Mode</md-checkbox>
+                    </div>
+
+                </div>
+
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Job Mapping</md-checkbox>
+                    </div>
+
+                </div>
+
+                <div class='col-md-12'>File Authorization Mode</div>
+
+
+
+
+                <div class='col-md-12 m-t-10'>
+                    <div class="form-group">
+                        <md-radio-group [(ngModel)]="align">
+                            <md-radio-button class="example-margin" value="start"> Use Share & NTFS Permissions </md-radio-button>
+
+                        </md-radio-group>
+                    </div>
+
+                </div>
+
+                <div class='col-md-12 '>
+                    <div class="form-group">
+                        <md-radio-group [(ngModel)]="align">
+                            <md-radio-button class="example-margin" value="start"> NTFS Permissions Only</md-radio-button>
+
+                        </md-radio-group>
+                    </div>
+
+                </div>
+
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Job Mapping</md-checkbox>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class='col-md-8'>
+            <div class="form-group">
+                <md-input-container>
+                    <input mdInput placeholder="Global Excluded File" value="">
+                </md-input-container>
+            </div>
+        </div>
+        <div class='col-md-3'>
+            <button md-raised-button class="bgm-amber">Add</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class='col-md-8'>
+            <div class="form-group">
+                <md-input-container>
+                    <input mdInput placeholder="Type Excluded File Types" value="">
+                </md-input-container>
+            </div>
+        </div>
+        <div class='col-md-3'>
+            <button md-raised-button class="bgm-amber">Remove</button>
+        </div>
+    </div>
+
+
+
+
+
+</md-card>
+
+
+<md-card>
+    <div class="card-main-head"> Stub and Security Settings</div>
+
+    <div class="row">
+        <div class='col-md-6'>
+
+
+            <div class="row">
+                <div class='col-md-6'>
+                    Stub Access Mode
+                </div>
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <div class="fg-line">
+                            <div class="select">
+                                <select class="form-control">
+                                                    <option>Select an Option</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                    <option>Option 4</option>
+                                                    <option>Option 5</option>
+                                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Stub Authorisation</md-checkbox>
+                    </div>
 
                 </div>
             </div>
 
-            <div class='col-md-12'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Stubs Recovery Mode</md-checkbox>                    
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+                            Enable SharePoint Archiving</md-checkbox>
+                    </div>
+
                 </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">Show Drive Letter for Stub</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+                            Enable Thumbnails on Stub</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class='col-md-6'>
+
+            <div class="row new-lbl">
+                <div class="col-md-4 "> ShareArchiver DNS (FQDN)</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row new-lbl">
+                <div class="col-md-4 "> Stub Icons Path</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class='col-md-12'>Default Protocol</div>
 
             </div>
 
-               <div class='col-md-12'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Job Mapping</md-checkbox>                    
-                </div>
+            <div class="row m-t-15">
+                <div class='col-md-2'>
+                    <div class="form-group">
+                        <md-radio-group [(ngModel)]="align">
+                            <md-radio-button class="example-margin" value="start">HTTPS </md-radio-button>
 
+                        </md-radio-group>
+                    </div>
+
+                </div>
+                <div class='col-md-2'>Port</div>
+                <div class='col-md-8'><input type="text" class="form-control" id="inputSuccess1" value=""></div>
             </div>
+
+
+            <div class="row m-t-10 ">
+                <div class='col-md-2'>
+                    <div class="form-group">
+                        <md-radio-group [(ngModel)]="align">
+                            <md-radio-button class="example-margin" value="start">HTTPS </md-radio-button>
+
+                        </md-radio-group>
+                    </div>
+
+                </div>
+                <div class='col-md-2'>Port</div>
+                <div class='col-md-8'><input type="text" class="form-control" id="inputSuccess1" value=""></div>
+            </div>
+
+
 
         </div>
 
 
+    </div>
 
 
-     </div>
 
-</div>
+    <div class="row ">
+        <div class='col-md-6'>Access Denied” Message</div>
+
+    </div>
+
+    <div class="row ">
+        <div class='col-md-8'>
+            <div class="form-group">
+                <md-input-container>
+                    <input mdInput placeholder="Access Denied. Please contact your systems administrator" value="">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row ">
+        <div class='col-md-6'>Document Not Found” Message</div>
+
+    </div>
+
+    <div class="row ">
+        <div class='col-md-8'>
+            <div class="form-group">
+                <md-input-container>
+                    <input mdInput placeholder="Document not found. Please contact your systems administrator" value="">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+</md-card>
+
+<md-card>
+    <div class="card-main-head"> E-Discovery</div>
+
+    <div class="row ">
+        <div class='col-md-6'>
+            <div class="row new-lbl">
+                <div class="col-md-4 "> Max no. of Search Results</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row new-lbl">
+                <div class="col-md-4 ">
+                    Max no. of Analysis Results</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row new-lbl">
+                <div class="col-md-4 ">Max no of Export Results</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+
+                            Enable Export for Priv (?) </md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+                            User Print Report for Priv (?)</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class='col-md-6'>
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+                            Enable Thumbnails on Stub</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+                            Show File Path in Results</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+
+                            Enable Repository Search</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+
+                            Enable File Server Search</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
 
 
 
@@ -127,179 +508,330 @@ Max no. of Versions</div>
 
 
 
+<md-card>
+
+    <div class="row">
+        <div class='col-md-6'>
 
 
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+
+                            Enable CIFS File Sharing</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+
+
+                            Copy CIFS File to Archive</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+
+
+                            Restrict by AD Security Groups</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+
+                            Same group restrictions to archived data</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class='col-md-6'>
+
+            <div class="row new-lbl">
+                <div class="col-md-4 ">Link Validity (days)</div>
+                <div class="col-md-8">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row new-lbl">
+                <div class="col-md-4 ">Group Name</div>
+                <div class="col-md-6">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <ul class="icon-list pull-right m-r-25 m-t-10">
+                        <li class="icn-ref"></li>
+
+
+                    </ul>
+                </div>
+                
+            </div>
+
+
+
+           <div class="row ">
+        <div class='col-md-12'>
+            <div class="form-group">
+                <md-input-container>
+                    <input mdInput placeholder="Allowed Groups" value="">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+                 
+
+            
+
+
+        </div>
+    </div>
+
+</md-card>
+ 
+
+<md-card>
+    <div class="card-main-head">Folder Sharing</div>
+
+       <div class="row">
+                <div class='col-md-12'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">
+                            Enable Folder Sharing</md-checkbox>
+                    </div>
+
+                </div>
+            </div>
+
+</md-card>
+
+
+<md-card>
+     <div class="card-main-head">Data Guardians</div>
+     <div class="row">
+                <div class='col-md-6'>
+
+
+  <div class="row new-lbl">
+                <div class="col-md-4 ">Link Validity (days)</div>
+                <div class="col-md-7">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" id="inputSuccess1" value="">
+                    </div>
+                </div>
+                <div class="col-md-1">+
+                </div>
+            </div>
+
+    <div class="form-group">
+                <md-input-container>
+                    <input mdInput placeholder="Access Denied. Please contact your systems administrator" value="">
+                </md-input-container>
+            </div>
+
+                </div>
+                <div class='col-md-6'>
+                </div>
+     </div>
+
+</md-card>
 
 
 <div class="app-content">
-  <!-- globale configarations code-->
-<md-card>
+    <!-- globale configarations code-->
+    <md-card>
 
-    <div class="mdcard-header">
-        <h2>Global Configuration
-            <small>System edit form
+        <div class="mdcard-header">
+            <h2>Global Configuration
+                <small>System edit form
                                 </small>
-        </h2>
-    </div>
-    <div class="m-r-15 m-l-15">
+            </h2>
+        </div>
+        <div class="m-r-15 m-l-15">
+            <div class="row">
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-input-container>
+                            <input mdInput placeholder="DNS Suffix" value="us-west-2.compute.internal">
+                        </md-input-container>
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-input-container>
+                            <input mdInput placeholder="DNS Server 1" value="172.31.0.2">
+                        </md-input-container>
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-input-container>
+                            <input mdInput placeholder="DNS Server 2" value="172.33.0.4">
+                        </md-input-container>
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-input-container>
+                            <input mdInput placeholder="User Name (domain\username)" value="">
+                        </md-input-container>
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-input-container>
+                            <input mdInput placeholder="Password" value="">
+                        </md-input-container>
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-input-container>
+                            <input mdInput placeholder="Max no. of Versions" value="5">
+                        </md-input-container>
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-input-container>
+                            <input mdInput placeholder="Disk Warning Limit" value="90">
+                        </md-input-container>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row checkbox-cage">
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Thumbnails on Summary</md-checkbox>
+
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Lazy Archiving</md-checkbox>
+                    </div>
+                </div>
+
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Lazy Export</md-checkbox>
+                    </div>
+                </div>
+
+
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Show Folder size in File Explorer</md-checkbox>
+
+                    </div>
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Stubs Recovery Mode</md-checkbox>
+                    </div>
+
+                </div>
+
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Job Mapping</md-checkbox>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row m-t-20">
+                <div class='col-md-6'>File Authorization Mode</div>
+                <div class='col-md-6'>
+                    <md-radio-group [(ngModel)]="align">
+                        <md-radio-button class="example-margin" value="start"> Use Share & NTFS Permissions </md-radio-button>
+                        <md-radio-button class="example-margin" value="end">NTFS Permissions only</md-radio-button>
+                    </md-radio-group>
+
+                </div>
+            </div>
+
+            <div class="row m-t-20 m-b-20">
+                <div class='col-md-6'>
+
+                    <div class="row">
+                        <div class='col-md-9'>
+                            <div class="form-group">
+                                <md-input-container>
+                                    <input mdInput placeholder="Disk Warning LimitGlobal Excluded File Type" value="">
+                                </md-input-container>
+                            </div>
+
+
+                        </div>
+                        <div class='col-md-3'><button md-raised-button>Add</button></div>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+
+                    <div class="row">
+                        <div class='col-md-9'>
+                            <div class="form-group">
+                                <md-input-container>
+                                    <input mdInput placeholder="Disk Warning LimitGlobal Excluded File Type" value="">
+                                </md-input-container>
+                            </div>
+
+
+                        </div>
+                        <div class='col-md-3'><button md-raised-button>Remove</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <md-divider></md-divider>
         <div class="row">
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="DNS Suffix" value="us-west-2.compute.internal">
-                    </md-input-container>
-                </div>
-            </div>
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="DNS Server 1" value="172.31.0.2">
-                    </md-input-container>
-                </div>
-            </div>
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="DNS Server 2" value="172.33.0.4">
-                    </md-input-container>
-                </div>
-            </div>
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="User Name (domain\username)" value="">
-                    </md-input-container>
-                </div>
-            </div>
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="Password" value="">
-                    </md-input-container>
-                </div>
-            </div>
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="Max no. of Versions" value="5">
-                    </md-input-container>
-                </div>
-            </div>
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="Disk Warning Limit" value="90">
-                    </md-input-container>
-                </div>
-            </div>
-        </div>
-
-        <div class="row checkbox-cage">
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Thumbnails on Summary</md-checkbox>
-                                   
-                </div>
-            </div>
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked">Enable Lazy Archiving</md-checkbox>
-                                   </div>
-            </div>
-
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Lazy Export</md-checkbox>                   
-                </div>
-            </div>
-
-
-
-            <div class='col-md-6'>
-                <div class="form-group">
- <md-checkbox class="example-margin" [(ngModel)]="checked"> Show Folder size in File Explorer</md-checkbox>
-
-                </div>
-            </div>
-
-            <div class='col-md-6'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Stubs Recovery Mode</md-checkbox>                    
-                </div>
-
-            </div>
-
-               <div class='col-md-6'>
-                <div class="form-group">
-                    <md-checkbox class="example-margin" [(ngModel)]="checked"> Enable Job Mapping</md-checkbox>                    
-                </div>
-
-            </div>
-
-        </div>
-
-    <div class="row m-t-20">
-         <div class='col-md-6'>File Authorization Mode</div>
-          <div class='col-md-6'>
-<md-radio-group [(ngModel)]="align">
-        <md-radio-button class="example-margin" value="start"> Use Share & NTFS Permissions	</md-radio-button>
-        <md-radio-button class="example-margin" value="end">NTFS Permissions only</md-radio-button>
-      </md-radio-group>
-
-          </div>
-    </div>
-
-<div class="row m-t-20 m-b-20">
-     <div class='col-md-6'> 
-
-         <div class="row">
-               <div class='col-md-9'>
-               <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="Disk Warning LimitGlobal Excluded File Type" value="">
-                    </md-input-container>
-                </div>
-                
-                 
-         </div>
-         <div class='col-md-3'><button md-raised-button>Add</button></div>
-        </div>
-     </div>
-        <div class='col-md-6'> 
-
-         <div class="row">
-               <div class='col-md-9'>
-               <div class="form-group">
-                    <md-input-container>
-                        <input mdInput placeholder="Disk Warning LimitGlobal Excluded File Type" value="">
-                    </md-input-container>
-                </div>
-                
-                 
-         </div>
-         <div class='col-md-3'><button md-raised-button>Remove</button></div>
-        </div>
-     </div>
-  </div>
-    </div>
-
- <md-divider></md-divider>
-<div class="row">
-    <div class='col-md-12 m-t-20 text-center'> 
-        <button md-raised-button class="txt-white btn btn-lg btn-primary ">
+            <div class='col-md-12 m-t-20 text-center'>
+                <button md-raised-button class="txt-white btn btn-lg btn-primary ">
             <i class="material-icons">system_update_alt</i> Update
-            </button> 
+            </button>
             </div>
-</div>
-</md-card>
-<!-- end globale configarations code-->
+        </div>
+    </md-card>
+    <!-- end globale configarations code-->
 </div>

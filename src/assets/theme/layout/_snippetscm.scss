@@ -6292,7 +6292,13 @@ body {
     color: #FFEB3B!important
 }
 .bgm-amber {
-    background-color: #FFC107!important
+    background-color: #f5ae3b!important
+}
+
+button.bgm-amber{
+    color: #fff;
+
+
 }
 .c-amber {
     color: #FFC107!important
@@ -8010,8 +8016,9 @@ html:not(.ie9) .select.fg-line:before {
 
 .mat-checkbox-label{
 
-    font-size: 14px !important;
-    color: #9e9e9e !important;
+    font-size: 16px !important;
+    color: #454545 !important;
+    font-weight: 400;
 }
 
 .mat-checkbox-frame {
@@ -8025,7 +8032,7 @@ html:not(.ie9) .select.fg-line:before {
 .checkbox-cage{
     padding-top:15px;
     margin-top: 15px;
-    background-color: rgba(238, 238, 238, 0.33);
+  
 
     .form-group {
     margin-bottom: 10px;
@@ -8199,6 +8206,7 @@ color:#000;
 }
 
 .new-lbl{
+    height: 45px;
  
 
 &>div{
@@ -8207,5 +8215,9 @@ color:#000;
          line-height: 35px;
 }
 
+}
+
+.mat-tab-label-active{
+    background-color: #eee;
 }
 
