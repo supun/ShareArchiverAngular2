@@ -94,7 +94,7 @@
 
     </ul>
     </md-sidenav>
-    <app-toolbar [nav]="nav"></app-toolbar>
+    <app-toolbar [nav]="nav"  [hidden]="!isLoggedIn"></app-toolbar>
     <router-outlet></router-outlet>
 </md-sidenav-container>
 <!--*ngIf="(isLoggedIn | async)"-->
