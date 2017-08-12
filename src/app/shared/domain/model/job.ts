@@ -4,9 +4,8 @@
  * @Last Modified by:   Supun Dharmarathne 
  * @Last Modified time: 2017-04-03 16:26:29 
  */
-// domain class to handle job data
+// domain class to handle job data 
 export class Job {
-
     constructor(
        public id: number,
        public jobName: string,

@@ -25,7 +25,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr  *ngFor="let company of companyList">
                         <td>Evgeny</td>
                         <td>Evgeny Enterprise</td>
                         <td>evgeny</td>
@@ -33,64 +33,7 @@
                         <td>ae6a30dcb672c1dbf61b213c31b091da</td>
                         <td  class='action-cage' ><button md-button class="btn bgm-orange btn-xs" [routerLink]="['../../system/job-status']">Login</button></td>
                     </tr>
-                    <tr>
-                        <td>Evgeny</td>
-                        <td>Evgeny Enterprise</td>
-                        <td>evgeny</td>
-                        <td>evgeny_admin</td>
-                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
-                        <td  class='action-cage' ><button md-button class="btn bgm-orange btn-xs " [routerLink]="['../../system/job-status']">Login</button></td>
-                    </tr>
-                    <tr>
-                        <td>Evgeny</td>
-                        <td>Evgeny Enterprise</td>
-                        <td>evgeny</td>
-                        <td>evgeny_admin</td>
-                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
-                        <td  class='action-cage' ><button md-button class="btn bgm-orange btn-xs" [routerLink]="['../../system/job-status']">Login</button></td>
-                    </tr>
-                    <tr>
-                        <td>Evgeny</td>
-                        <td>Evgeny Enterprise</td>
-                        <td>evgeny</td>
-                        <td>evgeny_admin</td>
-                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
-                        <td  class='action-cage' ><button md-button class="btn bgm-orange btn-xs" [routerLink]="['../../system/job-status']">Login</button></td>
-                    </tr>
-                    <tr>
-                        <td>Evgeny</td>
-                        <td>Evgeny Enterprise</td>
-                        <td>evgeny</td>
-                        <td>evgeny_admin</td>
-                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
-                        <td  class='action-cage' ><button md-button class="btn bgm-orange btn-xs" [routerLink]="['../../system/job-status']">Login</button></td>
-                    </tr>
-                    <tr>
-                        <td>Evgeny</td>
-                        <td>Evgeny Enterprise</td>
-                        <td>evgeny</td>
-                        <td>evgeny_admin</td>
-                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
-                        <td  class='action-cage' ><button md-button class="btn bgm-orange btn-xs" [routerLink]="['../../system/job-status']">Login</button></td>
-                    </tr>
-                    <tr>
-                        <td>Evgeny</td>
-                        <td>Evgeny Enterprise</td>
-                        <td>evgeny</td>
-                        <td>evgeny_admin</td>
-                        <td>ae6a30dcb672c1dbf61b213c31b091da</td>
-                        <td  class='action-cage' ><button md-button class="btn bgm-orange btn-xs" [routerLink]="['../../system/job-status']">Login</button></td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td  class='action-cage' ><button md-button class="btn bgm-orange">Add</button></td>
-                    </tr>
-
+                    
                 </tbody>
             </table>
 

@@ -1,3 +1,5 @@
+import { AuthenticationService } from './../shared/service/authentication.service';
+import { Observable } from 'rxjs/Observable';
 /*
  * @Author: Supun Dharmarathne 
  * @Date: 2017-04-03 16:26:15 
@@ -16,9 +18,21 @@ export class NavbarComponent implements OnInit {
   configBtn = {show:false};
   userBtn = {show:false};
   systemConfigBtn = {show:false};
-  constructor() { }
+  isLoggedIn : boolean;
+
+  constructor(private authenticationService:AuthenticationService) {
+   // this.isLoggedIn = authenticationService.isLoggedIn();
+   }
 
   ngOnInit() {
+    this.authenticationService.isLoggedIn().subscribe(
+      (state)=>{
+        if(state){
+          this.isLoggedIn = true;
+           //this.router.navigate([`configuration/agent-list`]);
+        }
+      }
+    );
   }
 
 }

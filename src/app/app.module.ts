@@ -38,6 +38,10 @@ import { PolicyManagementComponent } from './component/configuration/policy-mana
 import { VolumeManagementComponent } from './component/configuration/volume-management/volume-management.component';
 import { SharedFolderComponent } from './component/configuration/shared-folder/shared-folder.component';
 import { AgentRegistrationComponent } from './component/configuration/agent-registration/agent-registration.component';
+import { AuthGuard } from './_guards/auth.guard';
+import { CompanyService } from './shared/service/configuration-service/company.service';
+import { AuthenticationService } from './shared/service/authentication.service';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +66,8 @@ import { AgentRegistrationComponent } from './component/configuration/agent-regi
     PolicyManagementComponent,
     VolumeManagementComponent,
     SharedFolderComponent,
-    AgentRegistrationComponent
+    AgentRegistrationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -74,7 +79,8 @@ import { AgentRegistrationComponent } from './component/configuration/agent-regi
     DataTableModule,
     TreeModule
   ],
-  providers: [],
+  providers: [AuthenticationService,CompanyService,AuthGuard],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

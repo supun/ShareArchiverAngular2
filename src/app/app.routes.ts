@@ -1,3 +1,5 @@
+import { AuthGuard } from './_guards/auth.guard';
+import { LoginComponent } from './auth/login/login.component';
 import { AgentRegistrationComponent } from './component/configuration/agent-registration/agent-registration.component';
 import { SharedFolderComponent } from './component/configuration/shared-folder/shared-folder.component';
 import { VolumeManagementComponent } from './component/configuration/volume-management/volume-management.component';
@@ -19,8 +21,12 @@ import { HomeComponent } from './home/home.component';
 export const appRoutes: Routes = [
   {
     path: '', 
-    redirectTo:'system',
+    redirectTo:'login',
     pathMatch: 'full'
+   },
+   {
+     path:'login',
+     component:LoginComponent
    },
    {
     path:'configuration',
@@ -32,7 +38,8 @@ export const appRoutes: Routes = [
             },
             {
               path:'company-list',
-              component: CompanyManagementComponent
+              component: CompanyManagementComponent,
+               canActivate: [AuthGuard],
             },
             {
               path:'agent-list',
